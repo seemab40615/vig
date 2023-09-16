@@ -21,9 +21,12 @@ module.exports = {
         darkPrimary: '#FF993B',
         secondary: "#542800",
         'them-black': "#100A04",
+        orangeGradient : 'rgba(255, 153, 59, 0.50);'
+        
       },
       fontFamily: {
         gridular: ["Gridular", "sans-serif"],
+        sfPro : ["SF Pro Regular"],
         "plex-mono": ["IBM Plex Mono", "monospace"],
         lato: ["Lato", "sans-serif"],
       },

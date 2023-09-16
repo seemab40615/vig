@@ -18,13 +18,21 @@ module.exports = {
       },
       colors: {
         primary: "#FF993C",
+        darkPrimary: '#FF993B',
         secondary: "#542800",
-        black: "#100A04",
+        'them-black': "#100A04",
       },
       fontFamily: {
         gridular: ["Gridular", "sans-serif"],
         "plex-mono": ["IBM Plex Mono", "monospace"],
         lato: ["Lato", "sans-serif"],
+      },
+      backgroundColor: {
+        navItemGradient: 'rgba(255, 153, 60, 0.10)',
+      },
+      backdropFilter: {
+        'none': 'none',
+        'blur': '6px',
       },
     },
   },

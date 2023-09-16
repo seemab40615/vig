@@ -1,6 +1,9 @@
+
+import HomeSection from "./Component/HomeSection/HomeSection";
+
 function App() {
-  return (
-    <div className="bg-black w-maxSize h-screen mx-auto">
+  return (<>
+  <div className="bg-black w-maxSize h-screen mx-auto">
       <div className="text-white flex justify-between">
         <div className="flex justify-between max-w-[870px] w-full">
           <ul className="flex gap-x-1">
@@ -14,7 +17,8 @@ function App() {
         <h1>WishList</h1>
       </div>
     </div>
-  );
-}
-
+    <HomeSection />
+  </>
+    
+)}
 export default App;

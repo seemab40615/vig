@@ -2,6 +2,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 
 @font-face {
+  font-family: 'SF Pro Regular';
+  src: url('./fonts/SFPRODISPLAYREGULAR.OTF') format('OpenType');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Pro Medium';
+  src: url('./fonts/SFPRODISPLAYMEDIUM.OTF') format('OpenType');
+  font-weight: 500;
+  font-style: medium;
+}
+
+@font-face {
+  font-family: 'SF Pro Bold';
+  src: url('./fonts/SFPRODISPLAYBOLD.OTF') format('OpenType');
+  font-weight: 700;
+  font-style: bold;
+}
+
+@font-face {
   font-family: 'Gridular';
   src: url('./fonts/Gridular-Regular.ttf') format('truetype');
   font-weight: 400;

@@ -2,6 +2,11 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
+    fontFamily: {
+    sans: ["IBM Plex Mono", "monospace"],
+    serif: ["Gridular", "sans-serif"],
+    lato: ["Lato", "sans-serif"],
+  },
     extend: {
       screens: {
         xxl: "1440px",

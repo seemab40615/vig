@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Graphs } from "../HeroSection/Graphs";
 import { Gradient } from "../UI/Gradient";
 
 export const NavBar = () => {
@@ -8,7 +7,7 @@ export const NavBar = () => {
 
   return (
       <div className="absolute text-white grid grid-cols-[minmax(0px,_870px)_minmax(0px,_570px)]">
-        <Gradient className='top-[-400px] left-[-300px]' />
+        <Gradient className='w-[800px] h-[800px] top-[-400px] left-[-300px]' />
         <div className="coll-span-1 flex justify-between items-center pr-[124px] z-10 pt-4 pl-[42px]">
           <ul className="flex gap-x-1">
             <li

@@ -35,6 +35,6 @@ export const About = () => (
         />
       </div>
     </div>
-    <Gradient className="top-0 left-0" />
+    <Gradient className="-left-[680px] top-0 w-[800px] h-[800px]" />
   </div>
 );

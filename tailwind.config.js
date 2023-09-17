@@ -3,10 +3,18 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      screens: {
+        xxl: "1440px",
+      },
+      width: {
+        maxSize: "1440px",},
+      maxWidth: {
+        maxSize: "1440px",
+      },
       colors: {
-        primary: '#FF993C',
-        secondary: '#542800',
-        background: '#000000',
+        primary: "#FF993C",
+        secondary: "#542800",
+        black: "#100A04",
       },
       fontFamily: {
         gridular: ["Gridular", "sans-serif"],

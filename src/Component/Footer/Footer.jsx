@@ -1,6 +1,6 @@
 import React from "react";
-import FooterImage from "../../Images/Footer.png"
-import FooterDollar from "../../Images/Footerdollor.svg"
+import FooterImage from "../../assets/Images/Footer.png"
+import FooterDollar from "../../assets/Images/Footerdollor.svg"
 export default function Footer() {
   return (
     <div className="bg-secondary flex px-28 w-maxSize mx-auto">

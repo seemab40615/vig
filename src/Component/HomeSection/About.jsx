@@ -1,8 +1,9 @@
 import aboutGif from "../../assets/animations/about.gif";
 import { Button } from "../UI/Button";
+import { Gradient } from "../UI/Gradient";
 
 export const About = () => (
-  <div className="grid md:grid-cols-[minmax(0px,_300px),1fr] grid-cols-1">
+  <div className="relative grid md:grid-cols-[minmax(0px,_300px),1fr] grid-cols-1">
     <p className="text-[16px] text-primary font-gridular uppercase">About</p>
     <div className="grid grid-cols-2">
       <img src={aboutGif} alt="about gif" width={350} height={252} />
@@ -34,5 +35,6 @@ export const About = () => (
         />
       </div>
     </div>
+    <Gradient className="top-0 left-0" />
   </div>
 );

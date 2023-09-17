@@ -1,3 +1,4 @@
+import { Button } from '../UI/Button';
 import {Graphs} from './Graphs';
 
 export const HeroSection = () => {
@@ -22,9 +23,7 @@ export const HeroSection = () => {
           leveraged sports futures for enhanced payouts alongside heightened
           risk factors
         </p>
-        <button className="text-black max-w-[148px] col-start-2 col-end-3 px-4 py-3 bg-primary rounded-[100px] backdrop-blur-[6px] font-medium text-sm -tracking-[0.28px]">
-          Waitlist Today
-        </button>
+        <Button  className='col-start-2 col-end-3 bg-primary ' text='Waitlist Today'  />
       </div>
 
       <div className=" bg-linear-gradient-effect-waitlist h-[438px] pt-[171px]">

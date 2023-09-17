@@ -1,74 +1,101 @@
-export const NavBar = () => {
-  return (
-    <div className="bg-black w-maxSize mx-auto">
-      <div className="relative text-white flex justify-between min-h-[876px]">
-        <div className="absolute top-[-400px] left-[-300px] w-[800px] h-[800px] bg-gradient-effect z-0"></div>
+import React, { useState } from "react";
+import { Graphs } from "../HeroSection/Graphs";
 
-        <div className="flex justify-between items-center max-w-[870px] h-fit w-full pr-[124px] z-10 pt-4 pl-[42px]">
+export const NavBar = () => {
+  const [selectedNavItem, setSelectedNavItem] = useState("Home");
+  const [isDropdownVisible, setDropdownVisible] = useState(false);
+
+  return (
+      <div className="absolute text-white grid grid-cols-[minmax(0px,_870px)_minmax(0px,_570px)]">
+        <div className="absolute top-[-400px] left-[-300px] w-[800px] h-[800px] bg-gradient-effect z-0"></div>
+        <div className="coll-span-1 flex justify-between items-center pr-[124px] z-10 pt-4 pl-[42px]">
           <ul className="flex gap-x-1">
-            <li className="px-4 py-3 rounded-[100px] bg-primary text-black font-medium text-sm -tracking-[0.28px] cursor-pointer">
+            <li
+              onClick={() => setSelectedNavItem("Home")}
+              className={`px-4 py-3 rounded-[100px] ${
+                selectedNavItem === "Home"
+                  ? "bg-primary text-black"
+                  : "bg-navItemGradient text-primary"
+              } font-medium text-sm -tracking-[0.28px] cursor-pointer`}
+            >
               Home
             </li>
-            <li className="px-4 py-3 rounded-[100px] text-primary bg-navItemGradient font-medium text-sm -tracking-[0.28px] backdrop-blur-[6px] cursor-pointer">
+            <li
+              onClick={() => {
+                setSelectedNavItem("Platform Solutions");
+                setDropdownVisible(false);
+              }}
+              className={`px-4 py-3 rounded-[100px] ${
+                selectedNavItem === "Platform Solutions"
+                  ? "bg-primary text-black"
+                  : "bg-navItemGradient text-primary"
+              } font-medium text-sm -tracking-[0.28px] backdrop-blur-[6px] cursor-pointer`}
+            >
               Platform Solutions
             </li>
-            <li className="relative flex gap-x-1 px-4 py-3 rounded-[100px] text-primary bg-navItemGradient font-medium text-sm -tracking-[0.28px] backdrop-blur-[6px] cursor-pointer">
+            <li
+              onClick={() => {
+                setSelectedNavItem("Resources");
+                setDropdownVisible(!isDropdownVisible);
+              }}
+              className={`relative flex gap-x-1 px-4 py-3 rounded-[100px] ${
+                selectedNavItem === "Resources"
+                  ? "bg-primary text-black"
+                  : "bg-navItemGradient text-primary"
+              } font-medium text-sm -tracking-[0.28px] cursor-pointer`}
+            >
               Resources
               <svg
+                className={`transform ${isDropdownVisible ? "rotate-180" : ""}`}
+                width="20px"
+                height="20px"
+                viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
               >
-                <mask
-                  id="mask0_480_130"
-                  maskUnits="userSpaceOnUse"
-                  x="0"
-                  y="0"
-                  width="20"
-                  height="20"
-                >
-                  <rect
-                    x="20"
-                    y="20"
-                    width="20"
-                    height="20"
-                    transform="rotate(180 20 20)"
-                    fill="#D9D9D9"
-                  />
-                </mask>
-                <g mask="url(#mask0_480_130)">
+                <rect x="0" fill="none" width="24" height="24" />
+
+                <g>
                   <path
-                    d="M10 7.78842L13.6699 11.4583L6.33019 11.4583L10 7.78842Z"
-                    fill="black"
+                    d="M7 10l5 5 5-5"
+                    fill={selectedNavItem === "Resources" ? "#000" : "#FF993C"}
                   />
                 </g>
               </svg>
-              <ul className="absolute top-[50px] w-full left-0 flex flex-col gap-y-1">
-                <li className="px-4 py-3 rounded-[100px] w-full text-center text-primary bg-navItemGradient backdrop-blur-[6px] font-medium text-sm -tracking-[0.28px] cursor-pointer">
-                  Faq's
-                </li>
-                <li className="px-4 py-3 rounded-[100px] w-full text-center text-primary bg-navItemGradient backdrop-blur-[6px] font-medium text-sm -tracking-[0.28px] cursor-pointer">
-                  Changelog
-                </li>
-                <li className="px-4 py-3 rounded-[100px] w-full text-center text-primary bg-navItemGradient backdrop-blur-[6px] font-medium text-sm -tracking-[0.28px] cursor-pointer">
-                  Blog
-                </li>
-              </ul>
+              {isDropdownVisible && (
+                <ul className="absolute top-[50px] w-full left-0 flex flex-col gap-y-1">
+                  <li className="px-4 py-3 rounded-[100px] w-full text-center text-primary bg-navItemGradient backdrop-blur-[6px] font-medium text-sm -tracking-[0.28px] cursor-pointer">
+                    Faq's
+                  </li>
+                  <li className="px-4 py-3 rounded-[100px] w-full text-center text-primary bg-navItemGradient backdrop-blur-[6px] font-medium text-sm -tracking-[0.28px] cursor-pointer">
+                    Changelog
+                  </li>
+                  <li className="px-4 py-3 rounded-[100px] w-full text-center text-primary bg-navItemGradient backdrop-blur-[6px] font-medium text-sm -tracking-[0.28px] cursor-pointer">
+                    Blog
+                  </li>
+                </ul>
+              )}
             </li>
-            <li className="px-4 py-3 rounded-[100px] text-primary bg-navItemGradient font-medium text-sm -tracking-[0.28px] backdrop-blur-[6px] cursor-pointer">
+            <li
+              onClick={() => {
+                setSelectedNavItem("Contact");
+                setDropdownVisible(false);
+              }}
+              className={`px-4 py-3 rounded-[100px] ${
+                selectedNavItem === "Contact"
+                  ? "bg-primary text-black"
+                  : "bg-navItemGradient text-primary"
+              } font-medium text-sm -tracking-[0.28px] backdrop-blur-[6px] cursor-pointer`}
+            >
               Contact
             </li>
           </ul>
           <h1 className="text-primary font-gridular text-2xl uppercase">VIG</h1>
         </div>
-        <div className="w-full max-w-[570px] flex justify-end bg-linear-gradient-effect-waitlist h-[438px] pt-4 pr-[42px]">
+        <div className="col-span-1 flex justify-end pt-4 pr-[42px]">
           <button className="h-fit px-4 py-3 bg-primary rounded-[100px] backdrop-blur-[6px] text-black font-medium text-sm -tracking-[0.28px]">
             waitlist
           </button>
         </div>
       </div>
-    </div>
   );
 };

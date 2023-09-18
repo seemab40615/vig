@@ -1,6 +1,6 @@
 import React from "react";
 import KeyFeatures from "../KeyFeatures/KeyFeatures";
-import { HeroSection } from "../HeroSection/HeroSection";
+import { HeroSection } from "../Footer/HeroSection/HeroSection";
 import KeyComponent from "../KeyComponent/KeyComponent";
 import { About } from "./About";
 export default function HomeSection() {

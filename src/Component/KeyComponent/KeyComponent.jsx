@@ -1,33 +1,55 @@
-import React from 'react'
-import FeatureCard from '../FeatureCard/FeatureCard'
-export default function KeyFeatures() {
-    const para1 = "Users can amplify their potential payouts using the platform's leverage system, which multiplies the potential payout but also the risk."
+import React from "react";
+export default function KeyComponent() {
+  
   return (
-    <div className='grid grid-cols-12 m-8'>
-        <div className=' col-span-3 text-[16px] text-primary font-gridular'>KEY COMPONENTS</div>
-        <div className='flex flex-col col-span-9'>
-            <div className='flex flex-row'>
-                <FeatureCard  paragraph={para1} >
-                <h4 className='text-[32px] text-primary font-sfPro'>LE<span className='font-gridular'>V</span>ERAGE SYSTEM</h4>
-                </FeatureCard>
-                <div></div>
-            </div>
-            <div className='flex flex-row'>
-                <FeatureCard  paragraph={para1} >
-                <h4 className='text-[32px] text-primary font-sfPro'>LE<span className='font-gridular'>V</span>ERAGE SYSTEM</h4>
-                </FeatureCard>
-            </div>
-            <div className='flex flex-row'>
-                <FeatureCard  paragraph={para1} >
-                <h4 className='text-[32px] text-primary font-sfPro'>LE<span className='font-gridular'>V</span>ERAGE SYSTEM</h4>
-                </FeatureCard>
-                <FeatureCard  paragraph={para1} >
-                <h4 className='text-[32px] text-primary font-sfPro'>LE<span className='font-gridular'>V</span>ERAGE SYSTEM</h4>
-                </FeatureCard>
-            </div>
-
+    <div className="grid grid-cols-12 m-8">
+      <div className=" col-span-3 text-[16px] text-primary font-gridular">
+        KEY COMPONENTS
+      </div>
+      <div className="flex flex-col col-span-9">
+        <div className="flex flex-col pb-[42px] gap-y-[42px] border-b border-primary">
+          <div className="flex gap-x-4">
+            <p className="font-gridular text-primary">01</p>
+            <h4 className="text-[36px] text-primary font-sfPro uppercase">
+              Lever<span className="font-gridular">a</span>ged Betti
+              <span className="font-gridular">n</span>g
+            </h4>
+          </div>
+          <p className="leading-[20.8px] font-plex-mono text-orangeGradient pl-10">
+            For a bet of $100 on a team with +2500 odds at 5x leverage, the
+            potential payout is $12,500 instead of the regular $2,500. However,
+            the risk is also multiplied.
+          </p>
         </div>
-
+        <div className="flex flex-col pb-[42px] gap-y-[42px] border-b border-primary">
+          <div className="flex gap-x-4">
+            <p className="font-gridular text-primary">01</p>
+            <h4 className="text-[36px] text-primary font-sfPro uppercase">
+              Lever<span className="font-gridular">a</span>ged Betti
+              <span className="font-gridular">n</span>g
+            </h4>
+          </div>
+          <p className="leading-[20.8px] font-plex-mono text-orangeGradient pl-10">
+            For a bet of $100 on a team with +2500 odds at 5x leverage, the
+            potential payout is $12,500 instead of the regular $2,500. However,
+            the risk is also multiplied.
+          </p>
+        </div>
+        <div className="flex flex-col pb-[42px] gap-y-[42px] border-b border-primary">
+          <div className="flex gap-x-4">
+            <p className="font-gridular text-primary">01</p>
+            <h4 className="text-[36px] text-primary font-sfPro uppercase">
+              Lever<span className="font-gridular">a</span>ged Betti
+              <span className="font-gridular">n</span>g
+            </h4>
+          </div>
+          <p className="leading-[20.8px] font-plex-mono text-orangeGradient pl-10">
+            For a bet of $100 on a team with +2500 odds at 5x leverage, the
+            potential payout is $12,500 instead of the regular $2,500. However,
+            the risk is also multiplied.
+          </p>
+        </div>
+      </div>
     </div>
-  )
+  );
 }

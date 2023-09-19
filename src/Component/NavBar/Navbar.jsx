@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Gradient } from "../UI/Gradient";
 import { useWindowSize } from "../../hooks/useWindowSize";
-
+import { Link } from "react-router-dom";
 export const NavBar = () => {
   const [selectedNavItem, setSelectedNavItem] = useState("Home");
   const [isDropdownVisible, setDropdownVisible] = useState(false);
@@ -133,7 +133,7 @@ export const NavBar = () => {
                         : "bg-navItemGradient text-primary"
                     } font-medium text-sm -tracking-[0.28px] cursor-pointer`}
                   >
-                    Home
+                    <Link to="/">Home</Link>
                   </li>
                   <li
                     onClick={() => {
@@ -146,7 +146,7 @@ export const NavBar = () => {
                         : "bg-navItemGradient text-primary"
                     } font-medium text-sm -tracking-[0.28px] backdrop-blur-[6px] cursor-pointer`}
                   >
-                    Platform Solutions
+                   <Link to="/plateform" >Platform Solutions</Link>
                   </li>
                   <li
                     onClick={() => {
@@ -159,7 +159,7 @@ export const NavBar = () => {
                         : "bg-navItemGradient text-primary"
                     } font-medium text-sm -tracking-[0.28px] cursor-pointer`}
                   >
-                    Resources
+                    <Link to="/resource">Resources</Link>
                     <svg
                       className={`transform ${
                         isDropdownVisible ? "rotate-180" : ""

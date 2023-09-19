@@ -1,15 +1,19 @@
 import HomeSection from "./Component/HomeSection/HomeSection";
-import { NavBar } from "./Component";
 import { Layout } from "./Component/Layout/Layout";
-import Footer from './Component/Footer/Footer';
-// import Blog from './Component/Blog/Blog'
+import Blog from './Component/Blog/Blog'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import PlateformSolution from "./Component/PlateformSolution/PlateformSolution"
 function App() {
   return (
     <Layout>
-      <NavBar />
-      <HomeSection />
-      {/* <Blog /> */}
-      <Footer />
+       <Router>
+      <Routes>
+        <Route exact path="/" element={<HomeSection />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/plateform" element={<PlateformSolution /> } />
+        <Route path="*" element={<HomeSection />} />
+      </Routes>
+    </Router>
     </Layout>
   );
 }

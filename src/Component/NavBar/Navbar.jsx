@@ -6,13 +6,13 @@ export const NavBar = () => {
   const [isDropdownVisible, setDropdownVisible] = useState(false);
 
   return (
-      <div className="absolute text-white grid grid-cols-[minmax(0px,_870px)_minmax(0px,_570px)]">
+      <div className="text-white flex justify-between pt-4 px-[42px]">
         <Gradient className='w-[800px] h-[800px] top-[-400px] left-[-300px]' />
-        <div className="coll-span-1 flex justify-between items-center pr-[124px] z-10 pt-4 pl-[42px]">
+        <div className="flex justify-between items-center max-w-[828px] w-full">
           <ul className="flex gap-x-1">
             <li
               onClick={() => setSelectedNavItem("Home")}
-              className={`px-4 py-3 rounded-[100px] ${
+              className={`h-10 flex justify-start items-center px-4 py-3 rounded-[100px] ${
                 selectedNavItem === "Home"
                   ? "bg-primary text-black"
                   : "bg-navItemGradient text-primary"
@@ -25,7 +25,7 @@ export const NavBar = () => {
                 setSelectedNavItem("Platform Solutions");
                 setDropdownVisible(false);
               }}
-              className={`px-4 py-3 rounded-[100px] ${
+              className={`flex justify-start items-center h-10 px-4 py-3 rounded-[100px] ${
                 selectedNavItem === "Platform Solutions"
                   ? "bg-primary text-black"
                   : "bg-navItemGradient text-primary"
@@ -38,7 +38,7 @@ export const NavBar = () => {
                 setSelectedNavItem("Resources");
                 setDropdownVisible(!isDropdownVisible);
               }}
-              className={`relative flex gap-x-1 px-4 py-3 rounded-[100px] ${
+              className={`relative flex gap-x-1 justify-center items-center h-10 px-4 py-3 rounded-[100px] ${
                 selectedNavItem === "Resources"
                   ? "bg-primary text-black"
                   : "bg-navItemGradient text-primary"
@@ -80,7 +80,7 @@ export const NavBar = () => {
                 setSelectedNavItem("Contact");
                 setDropdownVisible(false);
               }}
-              className={`px-4 py-3 rounded-[100px] ${
+              className={`h-10 px-4 py-3 flex justify-center items-center rounded-[100px] ${
                 selectedNavItem === "Contact"
                   ? "bg-primary text-black"
                   : "bg-navItemGradient text-primary"
@@ -91,8 +91,8 @@ export const NavBar = () => {
           </ul>
           <h1 className="text-primary font-gridular text-2xl uppercase">VIG</h1>
         </div>
-        <div className="col-span-1 flex justify-end pt-4 pr-[42px]">
-          <button className="h-fit px-4 py-3 bg-primary rounded-[100px] backdrop-blur-[6px] text-black font-medium text-sm -tracking-[0.28px]">
+        <div className="max-w-[528px] w-full flex justify-end">
+          <button className="h-fit px-4 py-3 bg-primary rounded-[100px] backdrop-blur-[6px] text-black font-medium text-sm -tracking-[0.28px] z-10">
             waitlist
           </button>
         </div>

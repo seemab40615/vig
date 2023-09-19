@@ -1,5 +1,5 @@
-import { Graphs } from "./Graphs";
 import { Button } from "../../../UI/Button";
+import graphGif from '../../../assets/animations/graph.gif';
 
 export const HeroSection = () => {
   return (
@@ -28,8 +28,9 @@ export const HeroSection = () => {
         </div>
       </div>
 
-      <div className="relative max-w-[570px] w-full -mt-[60px] bg-linear-gradient-effect-waitlist h-[438px] pt-[171px]">
-        <Graphs />
+      <div className="absoute -mt-[60px]">
+        
+      <img src={graphGif} alt="about gif" width={570} height={252} />
       </div>
     </div>
   );

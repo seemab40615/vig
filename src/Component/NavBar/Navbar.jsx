@@ -100,7 +100,7 @@ export const NavBar = () => {
             </li>
           </ul>
         )}
-        <h1 className={`text-primary font-gridular text-2xl uppercase `}>
+        <h1 className={`text-primary font-gridular text-2xl uppercase z-10`}>
           VIG
         </h1>
       </div>
@@ -157,7 +157,7 @@ export const NavBar = () => {
                       setSelectedNavItem("Resources");
                       setDropdownVisible(!isDropdownVisible);
                     }}
-                    className={`relative flex gap-x-1 justify-center items-center h-10 px-4 py-3 rounded-[100px] ${
+                    className={`relative flex gap-x-1 justify-center w-full items-center h-10 px-4 py-3 rounded-[100px] ${
                       selectedNavItem === "Resources"
                         ? "bg-primary text-black"
                         : "bg-navItemGradient text-primary"

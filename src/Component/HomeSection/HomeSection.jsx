@@ -7,7 +7,7 @@ export default function HomeSection() {
   return (
     <>
       <HeroSection />
-      <div className="px-[120px] mt-[250px]">
+      <div className="sm:px-[120px] sm:mt-[250px]">
         <About />
         <KeyFeatures />
         <KeyComponent />

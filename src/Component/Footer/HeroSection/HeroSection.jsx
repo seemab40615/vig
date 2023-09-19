@@ -28,7 +28,7 @@ export const HeroSection = () => {
         </div>
       </div>
 
-      <div className="absoute -mt-[60px]">
+      <div className="absoute -mt-[60px] flex-shrink-0 flex-grow-0">
         
       <img src={graphGif} alt="about gif" width={570} height={252} />
       </div>

@@ -1,10 +1,10 @@
-import { Button } from "../../../UI/Button";
-import graphGif from '../../../assets/animations/graph.gif';
+import { Button } from "../UI/Button";
+import graphGif from '../../assets/animations/graph.gif';
 
 export const HeroSection = () => {
   return (
     <div className="flex  text-white z-0">
-      <div className="flex items-end flex-col max-w-[870px] w-full pt-[150px] pl-[120px] gap-y-6">
+      <div className="flex items-end flex-col max-w-[870px] w-full pt-[120px] pl-[120px] gap-y-6">
         <h1 className="max-w-[750px] w-full self-start text-[96px] font-sfPro uppercase leading-[96px] text-primary flex flex-col">
           <span>
             <span className="someClassForE">

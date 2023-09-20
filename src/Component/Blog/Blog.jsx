@@ -1,11 +1,11 @@
 import React from 'react'
 import BlogItem from '../BlogItem/BlogItem'
-import BlogDetail from '../BlogDetail/BlogDetail'
 export default function Blog() {
   return (
-    <>
+    <div className='px-[120px] my-10'>
     <BlogItem />
-    <BlogDetail />
-    </>
+    <BlogItem />
+    <BlogItem />
+    </div>
   )
 }

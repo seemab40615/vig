@@ -1,5 +1,6 @@
 import React from "react";
 import FeatureCard from "../FeatureCard/FeatureCard";
+import plateformImage from "../../assets/Images/plateform.svg"
 export default function PlateformSolution() {
   const cardOne =
     "Harness the power of amplified stakes. Depending on your risk appetite and market assessment, opt for a leverage multiplier that suits your strategy, from 2x up to 13x.";
@@ -23,7 +24,18 @@ export default function PlateformSolution() {
     "Our dedicated support team is always ready to assist you. Whether you have platform-specific queries or need insights into the betting world, we’re here to help round the clock.";
 
   return (
-    <div className="flex flex-col gap-y-0 my-9">
+    <div className="flex flex-col gap-y-0 my-9 px-[120px]">
+      <div className=" grid grid-cols-2">
+      <div className="col-span-1 pt-8">
+        <h4 className="text-[96px] text-primary font-sfPro uppercase leading-none">
+        Pla<span className="font-gridular">t</span>for<span className="font-gridular">m</span> <span className="font-gridular">s</span>oluti<span className="font-gridular">o</span>ns
+          </h4>
+      </div>    
+      <div className="col-span-1 flex justify-end">
+            <img src={plateformImage} alt="PlateForm Solution" srcset={plateformImage} />
+      </div>
+
+      </div>
       <div className="flex">
         <FeatureCard paragraph={cardOne} width="w-full">
           <h4 className="text-[32px] text-primary font-sfPro uppercase">

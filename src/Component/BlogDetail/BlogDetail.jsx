@@ -2,7 +2,7 @@ import React from "react";
 
 export default function BlogDetail() {
   return (
-    <>
+    <div className='px-[120px] my-10'>
     <div className="bg-secondary my-[42px]">
       <div className="grid grid-cols-1 md:grid-cols-3 py-[42px] gap-8">
         <div>
@@ -129,6 +129,6 @@ export default function BlogDetail() {
         </div>
         
     </div>
-    </>
+    </div>
   );
 }

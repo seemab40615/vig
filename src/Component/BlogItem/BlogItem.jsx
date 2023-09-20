@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function BlogItem() {
   return (
@@ -9,7 +10,7 @@ export default function BlogItem() {
         </div>
         <div>
         <h4 className='text-orangeGradient text-[36px] font-gridular uppercase leading-none pb-4'>News</h4>
-        <p className='px-4 py-3 rounded-[100px] font-medium text-sm -tracking-[0.28px] cursor-pointer bg-navItemGradient text-primary flex w-fit'>Read <svg
+        <p className='px-4 py-3 rounded-[100px] font-medium text-sm -tracking-[0.28px] cursor-pointer bg-navItemGradient text-primary flex w-fit'> <Link to="/blogdetail" >Read</Link> <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"

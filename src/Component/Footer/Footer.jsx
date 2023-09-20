@@ -3,9 +3,9 @@ import { Gradient } from "../UI/Gradient";
 import FooterImage from "../../assets/Images/Footer.png"
 import FooterDollar from "../../assets/Images/Footerdollor.svg"
 
-export default function Footer(bgColor) {
+export default function Footer() {
   return (
-    <div className={`flex flex-col px-28 w-maxSize mx-auto ${bgColor}`}>
+    <div className={`flex flex-col px-28 w-maxSize mx-auto bg-secondary`}>
       <div className="relative text-white flex justify-between">
         <div className="flex justify-between  h-fit pt-4">
           <div className="flex gap-x-1">

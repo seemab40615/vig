@@ -17,14 +17,17 @@ export const NavBar = () => {
         {size.width >= 1242 && (
           <ul className="flex gap-x-1">
             <li
-              onClick={() => setSelectedNavItem("Home")}
+              onClick={() => {
+                setSelectedNavItem("Home");
+                setDropdownVisible(false);
+              }}
               className={`h-10 flex justify-start items-center px-4 py-3 rounded-[100px] ${
                 selectedNavItem === "Home"
                   ? "bg-primary text-black"
                   : "bg-navItemGradient text-primary"
               } font-medium text-sm -tracking-[0.28px] cursor-pointer`}
             >
-              Home
+              <Link to="/">Home</Link>
             </li>
             <li
               onClick={() => {
@@ -37,7 +40,8 @@ export const NavBar = () => {
                   : "bg-navItemGradient text-primary"
               } font-medium text-sm -tracking-[0.28px] backdrop-blur-[6px] cursor-pointer`}
             >
-              Platform Solutions
+              <Link to="/plateform">Platform Solutions</Link>
+              
             </li>
             <li
               onClick={() => {
@@ -50,7 +54,7 @@ export const NavBar = () => {
                   : "bg-navItemGradient text-primary"
               } font-medium text-sm -tracking-[0.28px] cursor-pointer`}
             >
-              Resources
+              <Link to="/resources">Resources</Link>
               <svg
                 className={`transform ${isDropdownVisible ? "rotate-180" : ""}`}
                 width="20px"
@@ -70,13 +74,13 @@ export const NavBar = () => {
               {isDropdownVisible && (
                 <ul className="absolute top-[50px] w-full left-0 flex flex-col gap-y-1">
                   <li className="px-4 py-3 rounded-[100px] w-full text-center text-primary bg-navItemGradient backdrop-blur-[6px] font-medium text-sm -tracking-[0.28px] cursor-pointer">
-                    Faq's
+                    <Link to="/faq">Faq's</Link>
                   </li>
                   <li className="px-4 py-3 rounded-[100px] w-full text-center text-primary bg-navItemGradient backdrop-blur-[6px] font-medium text-sm -tracking-[0.28px] cursor-pointer">
-                    Changelog
+                    <Link to="/changelog">Changelog</Link>
                   </li>
                   <li className="px-4 py-3 rounded-[100px] w-full text-center text-primary bg-navItemGradient backdrop-blur-[6px] font-medium text-sm -tracking-[0.28px] cursor-pointer">
-                    Blog
+                     <Link to="/blog">Blog</Link>
                   </li>
                 </ul>
               )}
@@ -92,7 +96,7 @@ export const NavBar = () => {
                   : "bg-navItemGradient text-primary"
               } font-medium text-sm -tracking-[0.28px] backdrop-blur-[6px] cursor-pointer`}
             >
-              Contact
+               <Link to="/contact">Contact</Link>
             </li>
           </ul>
         )}
@@ -183,13 +187,13 @@ export const NavBar = () => {
                     {isDropdownVisible && (
                       <ul className="absolute top-0 -left-[130px] w-full flex flex-col gap-y-1">
                         <li className="px-4 py-3 rounded-[100px] w-full text-center text-primary bg-navItemGradient backdrop-blur-[6px] font-medium text-sm -tracking-[0.28px] cursor-pointer">
-                          Faq's
+                          <Link to="/faq">Faq's</Link>
                         </li>
                         <li className="px-4 py-3 rounded-[100px] w-full text-center text-primary bg-navItemGradient backdrop-blur-[6px] font-medium text-sm -tracking-[0.28px] cursor-pointer">
-                          Changelog
+                          <Link to="/changelog">Changelog</Link>
                         </li>
                         <li className="px-4 py-3 rounded-[100px] w-full text-center text-primary bg-navItemGradient backdrop-blur-[6px] font-medium text-sm -tracking-[0.28px] cursor-pointer">
-                          Blog
+                          <Link to="/blog">Blog</Link>
                         </li>
                       </ul>
                     )}
@@ -205,7 +209,7 @@ export const NavBar = () => {
                         : "bg-navItemGradient text-primary"
                     } font-medium text-sm -tracking-[0.28px] backdrop-blur-[6px] cursor-pointer`}
                   >
-                    Contact
+                    <Link to="/contact">Contact</Link>
                   </li>
                 </ul>
               )}

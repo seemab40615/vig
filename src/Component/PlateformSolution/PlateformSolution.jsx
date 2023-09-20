@@ -24,19 +24,19 @@ export default function PlateformSolution() {
     "Our dedicated support team is always ready to assist you. Whether you have platform-specific queries or need insights into the betting world, we’re here to help round the clock.";
 
   return (
-    <div className="flex flex-col gap-y-0 my-9 px-[120px]">
+    <div className="flex flex-col gap-y-0 my-9 px-4 md:px-[120px] w-full overflow-hidden">
       <div className=" grid grid-cols-2">
       <div className="col-span-1 pt-8">
-        <h4 className="text-[96px] text-primary font-sfPro uppercase leading-none">
+        <h4 className="text-[52px] lg:text-[4vw] xl:text-[5.5vw] text-primary font-sfPro uppercase leading-none">
         Pla<span className="font-gridular">t</span>for<span className="font-gridular">m</span> <span className="font-gridular">s</span>oluti<span className="font-gridular">o</span>ns
           </h4>
       </div>    
-      <div className="col-span-1 flex justify-end">
+      <div className=" col-span-2 md:col-span-1 flex justify-end">
             <img src={plateformImage} alt="PlateForm Solution" srcset={plateformImage} />
       </div>
 
       </div>
-      <div className="flex">
+      <div className="flex flex-col md:flex-row w-full">
         <FeatureCard paragraph={cardOne} width="w-full">
           <h4 className="text-[32px] text-primary font-sfPro uppercase">
             Dy<span className="font-gridular">n</span>amic Le
@@ -52,7 +52,7 @@ export default function PlateformSolution() {
           </h4>
         </FeatureCard>
       </div>
-      <div className="flex">
+      <div className="flex flex-col md:flex-row w-full">
         <FeatureCard paragraph={cardThree} width="w-full">
           <h4 className="text-[32px] text-primary font-sfPro uppercase">
             Ada<span className="font-gridular">p</span>tive Pre
@@ -68,7 +68,7 @@ export default function PlateformSolution() {
           </h4>
         </FeatureCard>
       </div>
-      <div className="flex h-full">
+      <div className="flex flex-col md:flex-row w-full h-full">
         <FeatureCard paragraph={cardFive} width="w-full">
           <h4 className="text-[32px] text-primary font-sfPro uppercase">
             Us<span className="font-gridular">e</span>r-frie
@@ -83,7 +83,7 @@ export default function PlateformSolution() {
           </h4>
         </FeatureCard>
       </div>
-      <div className="flex">
+      <div className="flex flex-col md:flex-row w-full">
         <FeatureCard paragraph={cardSeven} width="w-full">
           <h4 className="text-[32px] text-primary font-sfPro uppercase">
             Se<span className="font-gridular">c</span>ure and Tra
@@ -100,7 +100,7 @@ export default function PlateformSolution() {
           </h4>
         </FeatureCard>
       </div>
-      <div className="flex">
+      <div className="flex flex-col md:flex-row w-full">
         <FeatureCard paragraph={cardNine} width="w-full">
           <h4 className="text-[32px] text-primary font-sfPro uppercase">
             <span className="font-gridular">c</span>ommunity Engage

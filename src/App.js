@@ -8,6 +8,8 @@ import { NavBar } from './Component/NavBar/Navbar';
 import Footer from './Component/Footer/Footer';
 import Changelog from './Component/Changelog/Changelog';
 import BlogDetail from './Component/BlogDetail/BlogDetail';
+import ContactForm from './Component/ContactForm/ContactForm';
+import Faq from './Component/Faq/Faq';
 function App() {
   return (
     <Router>
@@ -19,6 +21,8 @@ function App() {
           <Route path="/plateform" element={<PlateformSolution />} />
           <Route path="/changelog" element={<Changelog />} />
           <Route path="/blogdetail" element={<BlogDetail />} />
+          <Route path="/contact" element={<ContactForm />} />
+          <Route path="/faq" element={<Faq />} />
 
           <Route path="*" element={<HomeSection />} />
         </Routes>

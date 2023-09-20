@@ -54,7 +54,7 @@ export const NavBar = () => {
                   : "bg-navItemGradient text-primary"
               } font-medium text-sm -tracking-[0.28px] cursor-pointer`}
             >
-              <Link to="/resources">Resources</Link>
+             Resources
               <svg
                 className={`transform ${isDropdownVisible ? "rotate-180" : ""}`}
                 width="20px"
@@ -72,7 +72,7 @@ export const NavBar = () => {
                 </g>
               </svg>
               {isDropdownVisible && (
-                <ul className="absolute top-[50px] w-full left-0 flex flex-col gap-y-1">
+                <ul className="absolute top-[50px] w-full left-0 flex flex-col gap-y-1 z-[1]">
                   <li className="px-4 py-3 rounded-[100px] w-full text-center text-primary bg-navItemGradient backdrop-blur-[6px] font-medium text-sm -tracking-[0.28px] cursor-pointer">
                     <Link to="/faq">Faq's</Link>
                   </li>
@@ -163,7 +163,7 @@ export const NavBar = () => {
                         : "bg-navItemGradient text-primary"
                     } font-medium text-sm -tracking-[0.28px] cursor-pointer`}
                   >
-                    <Link to="/resource">Resources</Link>
+                    Resources
                     <svg
                       className={`transform ${
                         isDropdownVisible ? "rotate-180" : ""

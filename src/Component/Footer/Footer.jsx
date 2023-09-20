@@ -1,13 +1,13 @@
 import React from "react";
 import { Gradient } from "../UI/Gradient";
-import FooterImage from "../../assets/Images/Footer.png"
-import FooterDollar from "../../assets/Images/Footerdollor.svg"
+import FooterImage from "../../assets/Images/Footer.png";
+import FooterDollar from "../../assets/Images/Footerdollor.svg";
 
 export default function Footer() {
   return (
-    <div className={`flex flex-col px-28 w-maxSize mx-auto bg-secondary`}>
-      <div className="relative text-white flex justify-between">
-        <div className="flex justify-between  h-fit pt-4">
+    <div className={`flex flex-col px-28 mx-auto bg-secondary`}>
+      <div className="relative text-white flex justify-between flex-wrap w-full">
+        <div className="flex justify-between flex-1 pt-4">
           <div className="flex gap-x-1">
             <h1 className="text-[96px] text-primary font-sfPro font-normal leading-none">
               READ<span className="font-gridular">Y</span> TO
@@ -23,7 +23,7 @@ export default function Footer() {
             <img src={FooterDollar} alt="Footer Dollar" />
           </div>
         </div>
-        <div className=" flex justify-start pt-4 pl-[115px] min-w-[570px]">
+        <div className="flex-1 flex justify-start pt-4 pl-[115px] md:pl-4">
           <div className="w-full">
             <p className="max-w-[400px] flex justify-start text-orangeGradient">
               Join Vig today and unlock a new realm of possibilities. Amplify

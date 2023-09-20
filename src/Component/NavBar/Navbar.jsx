@@ -110,7 +110,7 @@ export const NavBar = () => {
         </button>{
             size.width <= 1242 && 
             <div className="relative flex justify-center">
-              <button className="w-10 rounded-full bg-secondary text-primary flex items-center justify-center" onClick={() => setIsMobileMenuVisible(prev => !prev)}>
+              <button className="w-10 rounded-full bg-secondary text-primary flex items-center justify-center z-10" onClick={() => setIsMobileMenuVisible(prev => !prev)}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"

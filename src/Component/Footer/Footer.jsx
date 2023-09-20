@@ -5,11 +5,11 @@ import FooterDollar from "../../assets/Images/Footerdollor.svg";
 
 export default function Footer() {
   return (
-    <div className={`flex flex-col px-28 mx-auto bg-secondary`}>
-      <div className="relative text-white flex justify-between flex-wrap w-full">
-        <div className="flex justify-between flex-1 pt-4">
+    <div className={`flex flex-col px-4 md:px-28  w-full overflow-hidden bg-secondary`}>
+      <div className="relative text-white flex flex-wrap justify-between overflow-hidden w-full">
+        <div className="flex justify-between  h-fit pt-4">
           <div className="flex gap-x-1">
-            <h1 className="text-[96px] text-primary font-sfPro font-normal leading-none">
+            <h1 className="text-[52px] lg:text-[4vw] xl:text-[5.5vw]  text-primary font-sfPro font-normal leading-none">
               READ<span className="font-gridular">Y</span> TO
               <br /> SEI<span className="font-gridular">Z</span>E T
               <span className="font-gridular">HE</span>
@@ -19,11 +19,11 @@ export default function Footer() {
               <br /> <span className="font-gridular">BETTING?</span>
             </h1>
           </div>
-          <div className="text-primary font-gridular text-[96px]  uppercase leading-none">
+          <div className="text-primary font-gridular uppercase leading-none">
             <img src={FooterDollar} alt="Footer Dollar" />
           </div>
         </div>
-        <div className="flex-1 flex justify-start pt-4 pl-[115px] md:pl-4">
+        <div className=" flex justify-start pt-4 xlg:pl-[115px] lg:min-w-[500px]">
           <div className="w-full">
             <p className="max-w-[400px] flex justify-start text-orangeGradient">
               Join Vig today and unlock a new realm of possibilities. Amplify
@@ -41,7 +41,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="flex justify-between mt-[60px] mb-4">
+      <div className="flex justify-between flex-wrap mt-[60px] mb-4 w-full overflow-hidden">
         <ul className="flex gap-x-1">
           <li
             className={`px-4 py-3 rounded-[100px] font-medium text-sm -tracking-[0.28px] cursor-pointer text-primary`}
@@ -63,7 +63,7 @@ export default function Footer() {
         </ul>
         <ul className="flex gap-x-1">
           <li
-            className={`px-4 py-3 rounded-[100px] font-medium text-sm -tracking-[0.28px] cursor-pointer bg-navItemGradient text-primary flex`}
+            className={`px-2 sm:px-4 py-3 rounded-[100px] font-medium text-[14px] sm:text-sm -tracking-[0.28px] cursor-pointer bg-navItemGradient text-primary flex`}
           >
             Twitter{" "}
             <svg
@@ -92,7 +92,7 @@ export default function Footer() {
             </svg>
           </li>
           <li
-            className={`px-4 py-3 rounded-[100px] font-medium text-sm -tracking-[0.28px] cursor-pointer bg-navItemGradient text-primary flex`}
+            className={` px-2 sm:px-4 py-3 rounded-[100px] font-medium text-[14px] sm:text-sm -tracking-[0.28px] cursor-pointer bg-navItemGradient text-primary flex`}
           >
             Linked In{" "}
             <svg
@@ -121,7 +121,7 @@ export default function Footer() {
             </svg>
           </li>
           <li
-            className={`px-4 py-3 rounded-[100px] font-medium text-sm -tracking-[0.28px] cursor-pointer bg-navItemGradient text-primary flex`}
+            className={`px-2 sm:px-4 py-3 rounded-[100px] font-medium text-[14px] sm:text-sm -tracking-[0.28px] cursor-pointer bg-navItemGradient text-primary flex`}
           >
             Facebook{" "}
             <svg
@@ -151,6 +151,8 @@ export default function Footer() {
           </li>
         </ul>
       </div>
+
+
     </div>
   );
 }

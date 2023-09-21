@@ -1,7 +1,7 @@
 import React from "react";
 export default function KeyComponent() {
   return (
-    <div className="grid md:grid-cols-12 xs:grid-cols-1 xs:gap-y-6 xs:px-4 md:px-0 mt-[100px]">
+    <div className="grid md:grid-cols-[minmax(0px,_300px)_minmax(0px,_450px)_minmax(0px,_450px)] xs:grid-cols-1 xs:gap-y-6 xs:px-4 md:px-0 mt-[100px]">
       <div className=" md:col-span-3 text-[16px] text-primary font-gridular">
         KEY COMPONENTS
       </div>

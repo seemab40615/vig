@@ -5,7 +5,7 @@ export const HeroSection = () => {
   return (
     <>
       <div className="flex text-white z-0 xs:flex-col-reverse lg:flex-row relative">
-        <div className="flex-1 flex md:items-end xs:items-center flex-col max-w-[870px] w-full md:pt-[120px] md:pl-[120px] xs:absolute  sm:absolute md:relative top-3/4 gap-y-6">
+        <div className="flex-1 flex md:items-end xs:items-center flex-col max-w-[870px] w-full md:pt-[120px] md:pl-[120px] xs:absolute  sm:absolute md:relative top-3/4 gap-y-6 z-30">
           <div className="md:self-start">
             <h1 className="max-w-[750px] w-full self-start xs:text-[62px] xs:leading-[62px] mds:text-[70px] mds:leading-[70px] sm:text-[80px] sm:leading-[80px] smd:text-[100px] smd:leading-[100px] md:text-[90px] md:leading-[90px] xl:text-[96px] xl:leading-[96px] font-sfPro uppercase text-primary flex flex-col">
               <span>
@@ -31,13 +31,11 @@ export const HeroSection = () => {
           </div>
         </div>
 
-        {/* <div className="absoute -mt-[60px] max-w-[570px] max-h-[252px] w-full"> */}
         <img
           src={graphGif}
           alt="about gif"
-          className="flex-1 absoute -mt-[60px] right-0 w-full"
+          className="flex-1 absoute -mt-[60px] right-0 w-full z-10"
         />
-        {/* </div> */}
       </div>
       <div className="md:hidden xs:block xs:mb-[110px] w-[100px] h-[200px]"></div>
     </>

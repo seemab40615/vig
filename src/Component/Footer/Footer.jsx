@@ -6,7 +6,7 @@ import FooterDollar from "../../assets/Images/Footerdollor.svg";
 export default function Footer() {
   return (
     <div className={`flex flex-col px-4 md:px-28  w-full overflow-hidden bg-secondary`}>
-      <div className="relative text-white flex flex-wrap justify-between overflow-hidden w-full">
+      <div className="relative text-white flex flex-wrap xs:justify-center md:justify-between overflow-hidden w-full">
         <div className="flex justify-between  h-fit pt-4">
           <div className="flex gap-x-1">
             <h1 className="text-[52px] lg:text-[4vw] xl:text-[5.5vw]  text-primary font-sfPro font-normal leading-none">

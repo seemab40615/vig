@@ -3,14 +3,12 @@ import { Button } from "../UI/Button";
 import { Gradient } from "../UI/Gradient";
 
 export const About = () => (
-  <div className="relative grid md:grid-cols-[1fr,3fr] xs:grid-cols-1 xs:px-4 xs:gap-y-6 md:px-0 sm:mt-10">
+  <div className="relative grid md:grid-cols-[minmax(0px,_300px)_minmax(0px,_350px)_minmax(0px,_450px)] xs:grid-cols-1 xs:place-items-center xs:px-4 xs:gap-y-6 md:px-0 sm:mt-10">
     <p className="text-[16px] xs:leading-[21px] md:leading-[16px] text-primary font-gridular uppercase">
       About
     </p>
-    <div className="w-full grid xs:grid-cols-1 md:grid-cols-[minmax(0px,_350px)_minmax(0px,_450px)] xs:place-items-center md:place-items-start md:gap-8">
-      <img src={aboutGif} alt="about gif" width={350} height={252} />
+    <img src={aboutGif} alt="about gif" width={350} height={252} className="xs:pr-0 md:pr-[100px] xs:pt-0 md:pt-[53px]" />
 
-      <div>
         <h1 className="uppercase text-primary font-sfPro max-w-[450px] leading-[43.2px] text-4xl">
           <span className="font-gridular">Vig</span> is a s
           <span className="font-gridular">t</span>ate-of-t
@@ -27,8 +25,8 @@ export const About = () => (
           <span className="font-gridular">e</span>ntial returns and ri
           <span className="font-gridular">s</span>ks
         </h1>
-      </div>
-      <div className="md:col-start-2 md:col-end-3 max-w-[450px] flex flex-col gap-y-4 mt-[42px]">
+
+      <div className="md:col-start-3 md:col-end-4 max-w-[450px] flex flex-col gap-y-4 mt-[42px]">
         <p className="text-darkPrimary leading-[20.8px] tracking-[0.16px]">
           By integrating advanced algorithms that monitor real-time odds from
           various oddsmakers, the platform ensures bettors remain aware of their
@@ -38,18 +36,6 @@ export const About = () => (
           className="bg-darkPrimary bg-opacity-10 text-primary"
           text="Contact us"
         />
-      </div>
-      {/* <div className="col-start-2 col-end-3 max-w-[450px] flex flex-col gap-y-4 mt-[42px]">
-        <p className="text-darkPrimary leading-[20.8px] tracking-[0.16px]">
-          By integrating advanced algorithms that monitor real-time odds from
-          various oddsmakers, the platform ensures bettors remain aware of their
-          positions and potential liquidation scenarios.
-        </p>
-        <Button
-          className="bg-darkPrimary bg-opacity-10 text-primary"
-          text="Contact us"
-        />
-      </div> */}
     </div>
     <Gradient className="-left-[680px] top-0 w-[800px] h-[800px]" />
   </div>

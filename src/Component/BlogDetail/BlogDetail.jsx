@@ -2,39 +2,21 @@ import React from "react";
 import DetailImg1 from "../../assets/Images/detail1.png";
 import DetailImg2 from "../../assets/Images/detail2.png";
 import DetailImg3 from "../../assets/Images/detail3.png";
+import { Link } from "react-router-dom";
 export default function BlogDetail() {
   return (
     <>
       <div className="bg-secondary my-[62px] px-4 md:px-[120px]">
         <div className="grid grid-cols-1 md:grid-cols-3 py-[42px] gap-8">
           <div>
+            <Link to="/blog">
             <p className="px-4 py-3 rounded-[100px] font-medium text-sm -tracking-[0.28px] cursor-pointer bg-navItemGradient text-primary flex w-fit">
-              Read{" "}
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-              >
-                <mask
-                  id="mask0_170_158"
-                  maskUnits="userSpaceOnUse"
-                  x="0"
-                  y="0"
-                  width="24"
-                  height="24"
-                >
-                  <rect width="24" height="24" fill="#D9D9D9" />
-                </mask>
-                <g mask="url(#mask0_170_158)">
-                  <path
-                    d="M13.8461 17.6538L12.7923 16.5692L16.6116 12.75H4.5V11.25H16.6116L12.7923 7.43079L13.8461 6.34619L19.5 12L13.8461 17.6538Z"
-                    fill="#FF993C"
-                  />
-                </g>
-              </svg>
+              
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+<path d="M16.667 10L3.33366 10M3.33366 10L8.33366 15M3.33366 10L8.33366 5" stroke="#FF993C" stroke-width="1.5"/>
+</svg>{" "} Back to news
             </p>
+            </Link>
           </div>
           <div className="w-full">
             <h4 className="text-orangeGradient text-[36px] font-gridular uppercase leading-none pb-4">

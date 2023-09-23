@@ -4,9 +4,9 @@ import graphGif from "../../assets/animations/graph.gif";
 export const HeroSection = () => {
   return (
     <>
-      <div className="flex text-white z-0 xs:flex-col-reverse lg:flex-row relative">
-        <div className="flex-1 flex md:items-end xs:items-center flex-col max-w-[870px] w-full md:pt-[120px] md:pl-[120px] xs:absolute  sm:absolute md:relative top-3/4 gap-y-6 z-30">
-          <div className="md:self-start">
+      <div className="relative grid lg:grid-cols-[minmax(0px,_870px)_minmax(0px,_570px)] md:grid-cols-1 text-white z-0 xs:flex-col-reverse lg:flex-row">
+        <div className="xxl:pl-[120px] lg:pl-[60px] lg:pt-[94px] grid grid-cols-1 gap-y-[42px] auto-rows-max max-w-[750px] xs:pt-0 xs:w-full xs:px-[1rem] xs:row-start-2 xs:row-end-3 mds:row-start-auto xs:relative xs:top-auto xs:left-auto mds:absolute mds:top-[50%] mds:left-[50%] mds:transform mds:-translate-x-1/2 mds:translate-y-[15%] sm:translate-y-[15%] smd:translate-y-[38%] md:translate-y-[40%] md:w-full lg:relative lg:top-auto lg:left-auto lg:transform-none lg:row-start-1 lg:row-end-2 z-10 md">
+          <div className="">
             <h1 className="max-w-[750px] w-full self-start xs:text-[62px] xs:leading-[62px] mds:text-[70px] mds:leading-[70px] sm:text-[80px] sm:leading-[80px] smd:text-[100px] smd:leading-[100px] md:text-[90px] md:leading-[90px] xl:text-[96px] xl:leading-[96px] font-sfPro uppercase text-primary flex flex-col">
               <span>
                 <span className="">
@@ -21,8 +21,8 @@ export const HeroSection = () => {
             </h1>
           </div>
 
-          <div className="flex-1 flex flex-col gap-y-6 max-w-[400px] md:mr-[50px] xs:mr-0 xs:px-4 md:px-0">
-            <p className=" text-primary font-plex-mono leading-5 mt-[18px] md:mr-[50px] xs:mr-0">
+          <div className="place-self-end leading-[20.8px] tracking-[0.16px] flex flex-col gap-y-6">
+            <p className="text-primary w-full max-w-[450px] pr-[42px]">
               Elevate your betting experience with vig: uncover the power of
               leveraged sports futures for enhanced payouts alongside heightened
               risk factors
@@ -34,10 +34,10 @@ export const HeroSection = () => {
         <img
           src={graphGif}
           alt="about gif"
-          className="flex-1 absoute -mt-[60px] right-0 w-full z-10"
+          className="flex-1 absoute -mt-[60px] right-0 w-full z-0"
         />
       </div>
-      <div className="md:hidden xs:block xs:mb-[110px] w-[100px] h-[200px]"></div>
+      {/* <div className="md:hidden xs:block xs:mb-[110px] w-[100px] h-[200px]"></div> */}
     </>
   );
 };

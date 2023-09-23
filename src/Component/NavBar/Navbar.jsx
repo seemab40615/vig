@@ -1,17 +1,45 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Gradient } from "../UI/Gradient";
 import { useWindowSize } from "../../hooks/useWindowSize";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom"; //
+
 export const NavBar = () => {
-  const [selectedNavItem, setSelectedNavItem] = useState("Home");
+  const location = useLocation(); // <-- get the current location
+
+  // Function to get the initial selected nav item based on the current path
+  const getInitialSelectedNavItem = () => {
+    const path = location.pathname;
+    if (path === "/") return "Home";
+    if (path === "/plateform") return "Platform Solutions";
+    if (path === "/faq" || path === "/changelog" || path === "/blog")
+      return "Resources";
+    if (path === "/contact") return "Contact";
+    return ""; // default value
+  };
+
+  const [selectedNavItem, setSelectedNavItem] = useState(
+    getInitialSelectedNavItem()
+  );
   const [isDropdownVisible, setDropdownVisible] = useState(false);
   const [isMobileMenuVisible, setIsMobileMenuVisible] = useState(false);
   const size = useWindowSize();
   const dropdownRef = useRef(null);
   const mobileMenuRef = useRef(null);
+  const mobileButtonRef = useRef(null);
+
+  useEffect(() => {
+    if (size.width > 1242 && isMobileMenuVisible) {
+      setIsMobileMenuVisible(false);
+    }
+  }, [size.width, isMobileMenuVisible]);
+  
+
 
   useEffect(() => {
     function handleOutsideClick(event) {
+      // Check if the clicked target is the mobile button
+      if (event.target === mobileButtonRef.current) return;
+
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
         setDropdownVisible(false);
       }
@@ -27,7 +55,6 @@ export const NavBar = () => {
     document.addEventListener("mousedown", handleOutsideClick);
 
     return () => {
-      // Cleanup the event listener when the component is unmounted
       document.removeEventListener("mousedown", handleOutsideClick);
     };
   }, []);
@@ -52,7 +79,6 @@ export const NavBar = () => {
                   : "bg-navItemGradient text-primary"
               } font-medium text-sm -tracking-[0.28px] cursor-pointer`}
             >
-              {/* <Link to="/">Home</Link> */}
               Home
             </Link>
             <Link
@@ -148,10 +174,14 @@ export const NavBar = () => {
           waitlist
         </button>
         {size.width <= 1242 && (
-          <div className="relative flex justify-center">
+          <div className="relative flex justify-center" ref={mobileMenuRef}>
             <button
+              ref={mobileButtonRef}
               className="w-10 rounded-full bg-secondary text-primary flex items-center justify-center z-10"
-              onClick={() => setIsMobileMenuVisible((prev) => !prev)}
+              onClick={(e) => {
+                e.stopPropagation(); // Stop event propagation
+                setIsMobileMenuVisible((prev) => !prev);
+              }}
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -170,10 +200,7 @@ export const NavBar = () => {
               </svg>
             </button>
             {isMobileMenuVisible && (
-              <ul
-                ref={mobileMenuRef}
-                className="absolute top-[50px] right-0 flex flex-col gap-y-1 z-10"
-              >
+              <ul className="absolute top-[50px] right-0 flex flex-col gap-y-1 z-10">
                 <Link
                   to="/"
                   onClick={() => {
@@ -208,6 +235,7 @@ export const NavBar = () => {
                     setSelectedNavItem("Resources");
                     setDropdownVisible(!isDropdownVisible);
                   }}
+                  ref={dropdownRef}
                   className={`relative flex gap-x-1 justify-center w-full items-center h-10 px-4 py-3 rounded-[100px] ${
                     selectedNavItem === "Resources"
                       ? "bg-primary text-black"
@@ -236,35 +264,32 @@ export const NavBar = () => {
                     </g>
                   </svg>
                   {isDropdownVisible && (
-                    <ul
-                      className="absolute top-0 -left-[130px] w-full flex flex-col gap-y-1"
-                      ref={dropdownRef}
-                    >
+                    <ul className="absolute top-0 -left-[130px] w-full flex flex-col gap-y-1">
                       <Link
-                      onClick={() => {
-                        setDropdownVisible(false);
-                        setIsMobileMenuVisible(false);
-                      }}
+                        onClick={() => {
+                          setDropdownVisible(false);
+                          setIsMobileMenuVisible(false);
+                        }}
                         to="/faq"
                         className="px-4 py-3 rounded-[100px] w-full text-center text-primary bg-navItemGradient backdrop-blur-[6px] font-medium text-sm -tracking-[0.28px] cursor-pointer"
                       >
                         Faq's
                       </Link>
                       <Link
-                      onClick={() => {
-                        setDropdownVisible(false);
-                        setIsMobileMenuVisible(false);
-                      }}
+                        onClick={() => {
+                          setDropdownVisible(false);
+                          setIsMobileMenuVisible(false);
+                        }}
                         to="/changelog"
                         className="px-4 py-3 rounded-[100px] w-full text-center text-primary bg-navItemGradient backdrop-blur-[6px] font-medium text-sm -tracking-[0.28px] cursor-pointer"
                       >
                         Changelog
                       </Link>
                       <Link
-                      onClick={() => {
-                        setDropdownVisible(false);
-                        setIsMobileMenuVisible(false);
-                      }}
+                        onClick={() => {
+                          setDropdownVisible(false);
+                          setIsMobileMenuVisible(false);
+                        }}
                         to="/blog"
                         className="px-4 py-3 rounded-[100px] w-full text-center text-primary bg-navItemGradient backdrop-blur-[6px] font-medium text-sm -tracking-[0.28px] cursor-pointer"
                       >

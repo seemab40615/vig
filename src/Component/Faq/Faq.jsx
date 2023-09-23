@@ -3,7 +3,7 @@ import { FaqAccordion } from "../FaqAccordion/FaqAccordion";
 
 export default function Faq() {
   return (
-    <div className=" px-4 sm:px-[120px] my-10">
+    <div className="px-4 sm:px-[120px] py-[150px]">
       <div className="my-8 flex">
         <h4 className=" hover-scale  text-[52px] md:text-[96px] mb-10 text-primary font-sfPro uppercase leading-none">
           Fa<span className="font-gridular">q'</span>s

@@ -2,7 +2,7 @@ import React from "react";
 import ContactArrow from '../../assets/animations/contact_arrow.gif'
 export default function ContactForm() {
   return (
-    <div className=" px-4 md:px-[120px] my-[62px]">
+    <div className=" px-4 md:px-[120px] py-[150px]">
       <div className=" grid grid-cols-2">
         <div className="col-span-1 pt-8">
           <h4 className=" hover-scale text-[42px] sm:text-[52px] lg:text-[4.5vw] xl:text-[5.5vw] text-primary font-sfPro uppercase leading-none">

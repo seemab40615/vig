@@ -3,7 +3,7 @@ import { Button } from "../UI/Button";
 import { Gradient } from "../UI/Gradient";
 
 export const About = () => (
-  <div className="grid xxl:grid-cols-[minmax(0px,_300px)_minmax(0px,_450px)_minmax(0px,_450px)] xxl:gap-y-[42px] smd:grid-cols-[minmax(0px,_750px)_minmax(0px,_450px)] xs:grid-cols-1 xs:p-[1rem]">
+  <div className="relative overflow-contain grid xxl:grid-cols-[minmax(0px,_300px)_minmax(0px,_450px)_minmax(0px,_450px)] xxl:gap-y-[42px] md:p-0 md:grid-cols-[minmax(0px,_300px)_minmax(0px,_450px)_minmax(0px,_450px)] smd:grid-cols-1 xs:grid-cols-1 xs:p-[1rem]">
     <p className="text-[16px] xs:leading-[21px] md:leading-[16px] text-primary font-gridular uppercase">
       About
     </p>
@@ -15,7 +15,7 @@ export const About = () => (
       className="xs:pr-0 md:pr-[100px] xs:pt-0 md:pt-[53px] xs:place-self-center md:place-self-start"
     />
 
-    <h1 className="smd:col-start-2 smd:col-end-3 xxl:col-start-3 xxl:col-end-4 hover-scale uppercase text-primary font-sfPro max-w-[450px] leading-[43.2px] text-4xl  xs:place-self-center md:place-self-start">
+    <h1 className="smd:col-start-2 smd:col-end-3 md:col-start-2 md:col-end-4 xxl:col-start-3 xxl:col-end-4 hover-scale uppercase text-primary font-sfPro  leading-[43.2px] text-4xl  xs:place-self-center md:place-self-start">
       <span className="font-gridular">Vig</span> is a s
       <span className="font-gridular">t</span>ate-of-t
       <span className="font-gridular">h</span>e-art betti
@@ -32,7 +32,7 @@ export const About = () => (
       <span className="font-gridular">s</span>ks
     </h1>
 
-    <div className="smd:col-start-2 smd:col-end-3 xxl:col-start-3 xxl:col-end-4 max-w-[450px] flex flex-col gap-y-4 mt-[42px]  xs:place-self-center md:place-self-start">
+    <div className="smd:col-start-2 smd:col-end-4 xxl:col-start-3 xxl:col-end-4 max-w-[450px] flex flex-col gap-y-4 mt-[42px]  xs:place-self-start smd:place-self-start">
       <p className="text-darkPrimary leading-[20.8px] tracking-[0.16px]">
         By integrating advanced algorithms that monitor real-time odds from
         various oddsmakers, the platform ensures bettors remain aware of their
@@ -43,6 +43,6 @@ export const About = () => (
         text="Contact us"
       />
     </div>
-    <Gradient className="-left-[680px] top-0 w-[800px] h-[800px]" />
+    <Gradient className="-left-[780px] w-[800px] h-[800px]" />
   </div>
 );

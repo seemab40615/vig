@@ -25,7 +25,7 @@ module.exports = {
         primary: "#FF993C",
         darkPrimary: '#FF993B',
         secondary: "#542800",
-        'them-black': "#100A04",
+        'theme-black': "#100A04",
         orangeGradient : 'rgba(255, 153, 59, 0.50);'
         
       },

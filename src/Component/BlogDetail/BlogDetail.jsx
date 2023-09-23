@@ -19,7 +19,7 @@ export default function BlogDetail() {
             </Link>
           </div>
           <div className="w-full">
-            <h4 className="text-orangeGradient text-[36px] font-gridular uppercase leading-none pb-4">
+            <h4 className=" hover-scale text-orangeGradient text-[36px] font-gridular uppercase leading-none pb-4">
               Users can amplify their potential payouts using
             </h4>
             <p className="text-primary font-plex-mono">

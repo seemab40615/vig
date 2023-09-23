@@ -15,7 +15,7 @@ export const About = () => (
       className="xs:pr-0 md:pr-[100px] xs:pt-0 md:pt-[53px] xs:place-self-center md:place-self-start"
     />
 
-    <h1 className="smd:col-start-2 smd:col-end-3 xxl:col-start-3 xxl:col-end-4 uppercase text-primary font-sfPro max-w-[450px] leading-[43.2px] text-4xl  xs:place-self-center md:place-self-start">
+    <h1 className="smd:col-start-2 smd:col-end-3 xxl:col-start-3 xxl:col-end-4 hover-scale uppercase text-primary font-sfPro max-w-[450px] leading-[43.2px] text-4xl  xs:place-self-center md:place-self-start">
       <span className="font-gridular">Vig</span> is a s
       <span className="font-gridular">t</span>ate-of-t
       <span className="font-gridular">h</span>e-art betti

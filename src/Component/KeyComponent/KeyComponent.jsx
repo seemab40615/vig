@@ -9,7 +9,7 @@ export default function KeyComponent() {
         <div className="flex flex-col pb-[42px] gap-y-[42px] border-b border-primary">
           <div className="flex gap-x-4">
             <p className="font-gridular text-primary">01</p>
-            <h4 className="text-[36px] text-primary font-sfPro uppercase leading-none">
+            <h4 className=" hover-scale text-[36px] text-primary font-sfPro uppercase leading-none">
               Lever<span className="font-gridular">a</span>ged Betti
               <span className="font-gridular">n</span>g
             </h4>
@@ -23,7 +23,7 @@ export default function KeyComponent() {
         <div className="flex flex-col pb-[42px] gap-y-[42px] border-b border-primary pt-[62px]">
           <div className="flex gap-x-4">
             <p className="font-gridular text-primary">02</p>
-            <h4 className="text-[36px] text-primary font-sfPro uppercase leading-none">
+            <h4 className=" hover-scale text-[36px] text-primary font-sfPro uppercase leading-none">
               Po<span className="font-gridular">i</span>nt of Li
               <span className="font-gridular">q</span>uidation + Volu
               <span className="font-gridular">m</span>e and P
@@ -40,7 +40,7 @@ export default function KeyComponent() {
         <div className="flex flex-col pb-[42px] gap-y-[42px]  pt-[62px]">
           <div className="flex gap-x-4">
             <p className="font-gridular text-primary">03</p>
-            <h4 className="text-[36px] text-primary font-sfPro uppercase leading-none">
+            <h4 className=" hover-scale text-[36px] text-primary font-sfPro uppercase leading-none">
               Ri<span className="font-gridular">s</span>ks an
               <span className="font-gridular">d</span> Re
               <span className="font-gridular">w</span>ards:

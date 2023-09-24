@@ -177,7 +177,7 @@ export const NavBar = () => {
 
         <div className={`max-w-[620px] w-full flex justify-end gap-x-1`}>
           <button className="h-fit px-4 py-3 bg-primary rounded-[100px] backdrop-blur-[6px] text-black font-medium text-sm -tracking-[0.28px] z-10 flex-shrink">
-            waitlist
+            Waitlist
           </button>
           {size.width <= 1242 && (
             <div className="relative flex justify-center" ref={mobileMenuRef}>

@@ -5,8 +5,8 @@ import DetailImg3 from "../../assets/Images/detail3.png";
 import { Link } from "react-router-dom";
 export default function BlogDetail() {
   return (
-    <>
-      <div className="bg-secondary my-[62px] px-4 md:px-[120px]">
+    <div className="py-[150px]">
+      <div className="bg-secondary px-4 md:px-[120px]">
         <div className="grid grid-cols-1 md:grid-cols-3 py-[42px] gap-8">
           <div className=" z-10">
             <Link to="/blog">
@@ -111,6 +111,6 @@ export default function BlogDetail() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

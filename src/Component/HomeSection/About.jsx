@@ -9,7 +9,7 @@ export const About = () => (
     </p>
     <img src={aboutGif} alt="about gif" width={350} height={252} className="xs:pr-0 md:pr-[100px] xs:pt-0 md:pt-[53px]" />
 
-        <h1 className="uppercase text-primary font-sfPro max-w-[450px] leading-[43.2px] text-4xl">
+        <h1 className=" hover-scale uppercase text-primary font-sfPro max-w-[450px] leading-[43.2px] text-4xl">
           <span className="font-gridular">Vig</span> is a s
           <span className="font-gridular">t</span>ate-of-t
           <span className="font-gridular">h</span>e-art betti

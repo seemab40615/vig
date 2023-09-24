@@ -9,28 +9,28 @@ export default function KeyFeatures() {
       <div className="grid grid-cols-2">
       <div className="col-span-full md:col-span-1">
         <FeatureCard paragraph={para1}>
-          <h4 className="text-[32px] text-primary font-sfPro ">
+          <h4 className=" hover-scale  hover-scale text-[32px] text-primary font-sfPro ">
             LE<span className="font-gridular">V</span>ERAGE SYSTEM
           </h4>
         </FeatureCard>
         </div>
         <div className="col-span-full">
           <FeatureCard paragraph={para1}>
-            <h4 className="text-[32px] text-primary font-sfPro">
+            <h4 className=" hover-scale  hover-scale text-[32px] text-primary font-sfPro">
               LE<span className="font-gridular">V</span>ERAGE SYSTEM
             </h4>
           </FeatureCard>
         </div>
         <div className="col-span-full md:col-span-1">
         <FeatureCard paragraph={para1}>
-          <h4 className="text-[32px] text-primary font-sfPro">
+          <h4 className=" hover-scale  hover-scale text-[32px] text-primary font-sfPro">
             LE<span className="font-gridular">V</span>ERAGE SYSTEM
           </h4>
         </FeatureCard>
         </div>
         <div className="col-span-full md:col-span-1">
         <FeatureCard paragraph={para1}>
-          <h4 className="text-[32px] text-primary font-sfPro">
+          <h4 className=" hover-scale  hover-scale text-[32px] text-primary font-sfPro">
             LE<span className="font-gridular">V</span>ERAGE SYSTEM
           </h4>
         </FeatureCard>

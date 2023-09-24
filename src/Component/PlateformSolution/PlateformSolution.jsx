@@ -27,7 +27,7 @@ export default function PlateformSolution() {
     <div className="flex flex-col gap-y-0 my-9 px-4 md:px-[120px] w-full overflow-hidden">
       <div className=" grid grid-cols-2">
       <div className="col-span-1 pt-8">
-        <h4 className="text-[52px] lg:text-[4vw] xl:text-[5.5vw] text-primary font-sfPro uppercase leading-none">
+        <h4 className=" hover-scale text-[52px] lg:text-[4vw] xl:text-[5.5vw] text-primary font-sfPro uppercase leading-none">
         Pla<span className="font-gridular">t</span>for<span className="font-gridular">m</span> <span className="font-gridular">s</span>oluti<span className="font-gridular">o</span>ns
           </h4>
       </div>    
@@ -38,14 +38,14 @@ export default function PlateformSolution() {
       </div>
       <div className="flex flex-col md:flex-row w-full">
         <FeatureCard paragraph={cardOne} width="w-full">
-          <h4 className="text-[32px] text-primary font-sfPro uppercase">
+          <h4 className=" hover-scale text-[32px] text-primary font-sfPro uppercase">
             Dy<span className="font-gridular">n</span>amic Le
             <span className="font-gridular">v</span>erage Sys
             <span className="font-gridular">t</span>em
           </h4>
         </FeatureCard>
         <FeatureCard paragraph={cardTwo} width="w-full">
-          <h4 className="text-[32px] text-primary font-sfPro uppercase">
+          <h4 className=" hover-scale text-[32px] text-primary font-sfPro uppercase">
             Re<span className="font-gridular">a</span>l-time Li
             <span className="font-gridular">q</span>uidation Al
             <span className="font-gridular">e</span>rts
@@ -54,14 +54,14 @@ export default function PlateformSolution() {
       </div>
       <div className="flex flex-col md:flex-row w-full">
         <FeatureCard paragraph={cardThree} width="w-full">
-          <h4 className="text-[32px] text-primary font-sfPro uppercase">
+          <h4 className=" hover-scale text-[32px] text-primary font-sfPro uppercase">
             Ada<span className="font-gridular">p</span>tive Pre
             <span className="font-gridular">m</span>ium Mec
             <span className="font-gridular">h</span>anism
           </h4>
         </FeatureCard>
         <FeatureCard paragraph={cardFour} width="w-full">
-          <h4 className="text-[32px] text-primary font-sfPro uppercase">
+          <h4 className=" hover-scale text-[32px] text-primary font-sfPro uppercase">
             C<span className="font-gridular">o</span>mprehensive Odd
             <span className="font-gridular">s</span> Anal
             <span className="font-gridular">y</span>sis
@@ -70,14 +70,14 @@ export default function PlateformSolution() {
       </div>
       <div className="flex flex-col md:flex-row w-full h-full">
         <FeatureCard paragraph={cardFive} width="w-full">
-          <h4 className="text-[32px] text-primary font-sfPro uppercase">
+          <h4 className=" hover-scale text-[32px] text-primary font-sfPro uppercase">
             Us<span className="font-gridular">e</span>r-frie
             <span className="font-gridular">n</span>dly D
             <span className="font-gridular">a</span>shboard
           </h4>
         </FeatureCard>
         <FeatureCard paragraph={cardSix} width="w-full">
-          <h4 className="text-[32px] text-primary font-sfPro uppercase">
+          <h4 className=" hover-scale text-[32px] text-primary font-sfPro uppercase">
             Ed<span className="font-gridular">u</span>cation Hu
             <span className="font-gridular">b</span>
           </h4>
@@ -85,7 +85,7 @@ export default function PlateformSolution() {
       </div>
       <div className="flex flex-col md:flex-row w-full">
         <FeatureCard paragraph={cardSeven} width="w-full">
-          <h4 className="text-[32px] text-primary font-sfPro uppercase">
+          <h4 className=" hover-scale text-[32px] text-primary font-sfPro uppercase">
             Se<span className="font-gridular">c</span>ure and Tra
             <span className="font-gridular">n</span>sparent T
             <span className="font-gridular">r</span>an
@@ -93,7 +93,7 @@ export default function PlateformSolution() {
           </h4>
         </FeatureCard>
         <FeatureCard paragraph={cardEight} width="w-full">
-          <h4 className="text-[32px] text-primary font-sfPro uppercase">
+          <h4 className=" hover-scale text-[32px] text-primary font-sfPro uppercase">
             In<span className="font-gridular">s</span>tant Liqui
             <span className="font-gridular">d</span>ation & Pa
             <span className="font-gridular">y</span>outs
@@ -102,14 +102,14 @@ export default function PlateformSolution() {
       </div>
       <div className="flex flex-col md:flex-row w-full">
         <FeatureCard paragraph={cardNine} width="w-full">
-          <h4 className="text-[32px] text-primary font-sfPro uppercase">
+          <h4 className=" hover-scale text-[32px] text-primary font-sfPro uppercase">
             <span className="font-gridular">c</span>ommunity Engage
             <span className="font-gridular">m</span>ent Tool
             <span className="font-gridular">s</span>
           </h4>
         </FeatureCard>
         <FeatureCard paragraph={cardTen} width="w-full">
-          <h4 className="text-[32px] text-primary font-sfPro uppercase">
+          <h4 className=" hover-scale text-[32px] text-primary font-sfPro uppercase">
             <span className="font-gridular">24/7</span> Custome
             <span className="font-gridular">r</span> Supp
             <span className="font-gridular">o</span>rt

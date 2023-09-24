@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function FeatureCard({paragraph , children , width}) {
   return (
-    <div className={`p-4 m-1 flex rounded-3xl gap-10 flex-col bg-secondary ${width}`}>
+    <div className={`p-4 m-1 flex rounded-3xl gap-10 flex-col bg-secondary ${width} hover-scale`}>
         {children}
         <p className='text-orangeGradient font-normal'>{paragraph}</p>
     </div>

@@ -50,7 +50,7 @@ export const NavBar = () => {
                 selectedNavItem === "Home"
                   ? "bg-primary text-black"
                   : "bg-navItemGradient text-primary"
-              } font-medium text-sm -tracking-[0.28px] cursor-pointer`}
+              } font-medium text-sm -tracking-[0.28px] cursor-pointer hover:bg-primary hover:text-black`}
             >
               {/* <Link to="/">Home</Link> */}
               Home
@@ -65,7 +65,7 @@ export const NavBar = () => {
                 selectedNavItem === "Platform Solutions"
                   ? "bg-primary text-black"
                   : "bg-navItemGradient text-primary"
-              } font-medium text-sm -tracking-[0.28px] backdrop-blur-[6px] cursor-pointer`}
+              } font-medium text-sm -tracking-[0.28px] backdrop-blur-[6px] cursor-pointer hover:bg-primary hover:text-black`}
             >
               Platform Solutions
             </Link>
@@ -78,7 +78,7 @@ export const NavBar = () => {
                 selectedNavItem === "Resources"
                   ? "bg-primary text-black"
                   : "bg-navItemGradient text-primary"
-              } font-medium text-sm -tracking-[0.28px] cursor-pointer`}
+              } font-medium text-sm -tracking-[0.28px] cursor-pointer hover:bg-primary hover:text-black`}
             >
               Resources
               <svg
@@ -104,19 +104,19 @@ export const NavBar = () => {
                 >
                   <Link
                     to="/faq"
-                    className="px-4 py-3 rounded-[100px] w-full text-center text-primary bg-navItemGradient backdrop-blur-[6px] font-medium text-sm -tracking-[0.28px] cursor-pointer"
+                    className="px-4 py-3 rounded-[100px] w-full text-center text-primary bg-navItemGradient backdrop-blur-[6px] font-medium text-sm -tracking-[0.28px] cursor-pointer hover:bg-primary hover:text-black"
                   >
                     Faq's
                   </Link>
                   <Link
                     to="/changelog"
-                    className="px-4 py-3 rounded-[100px] w-full text-center text-primary bg-navItemGradient backdrop-blur-[6px] font-medium text-sm -tracking-[0.28px] cursor-pointer"
+                    className="px-4 py-3 rounded-[100px] w-full text-center text-primary bg-navItemGradient backdrop-blur-[6px] font-medium text-sm -tracking-[0.28px] cursor-pointer hover:bg-primary hover:text-black"
                   >
                     Changelog
                   </Link>
                   <Link
                     to="/blog"
-                    className="px-4 py-3 rounded-[100px] w-full text-center text-primary bg-navItemGradient backdrop-blur-[6px] font-medium text-sm -tracking-[0.28px] cursor-pointer"
+                    className="px-4 py-3 rounded-[100px] w-full text-center text-primary bg-navItemGradient backdrop-blur-[6px] font-medium text-sm -tracking-[0.28px] cursor-pointer hover:bg-primary hover:text-black"
                   >
                     Blog
                   </Link>
@@ -133,18 +133,18 @@ export const NavBar = () => {
                 selectedNavItem === "Contact"
                   ? "bg-primary text-black"
                   : "bg-navItemGradient text-primary"
-              } font-medium text-sm -tracking-[0.28px] backdrop-blur-[6px] cursor-pointer`}
+              } font-medium text-sm -tracking-[0.28px] backdrop-blur-[6px] cursor-pointer hover:bg-primary hover:text-black`}
             >
               Contact
             </Link>
           </ul>
         )}
         <h1 className={`text-primary font-gridular text-2xl uppercase z-10`}>
-          VIG
+          <Link to='/'>VIG</Link>
         </h1>
       </div>
       <div className={`max-w-[620px] w-full flex justify-end gap-x-1`}>
-        <button className="h-fit px-4 py-3 bg-primary rounded-[100px] backdrop-blur-[6px] text-black font-medium text-sm -tracking-[0.28px] z-10 flex-shrink">
+        <button className="h-fit px-4 py-3 bg-primary rounded-[100px] backdrop-blur-[6px] text-black font-medium text-sm -tracking-[0.28px] z-10 flex-shrink hover:bg-navItemGradient hover:text-primary">
           waitlist
         </button>
         {size.width <= 1242 && (
@@ -184,7 +184,7 @@ export const NavBar = () => {
                     selectedNavItem === "Home"
                       ? "bg-primary text-black"
                       : "bg-navItemGradient text-primary"
-                  } font-medium text-sm -tracking-[0.28px] cursor-pointer`}
+                  } font-medium text-sm -tracking-[0.28px] cursor-pointer hover:bg-primary hover:text-black`}
                 >
                   Home
                 </Link>
@@ -199,7 +199,7 @@ export const NavBar = () => {
                     selectedNavItem === "Platform Solutions"
                       ? "bg-primary text-black"
                       : "bg-navItemGradient text-primary"
-                  } font-medium text-sm -tracking-[0.28px] backdrop-blur-[6px] cursor-pointer`}
+                  } font-medium text-sm -tracking-[0.28px] backdrop-blur-[6px] cursor-pointer hover:bg-primary hover:text-black`}
                 >
                   Platform Solutions
                 </Link>
@@ -212,7 +212,7 @@ export const NavBar = () => {
                     selectedNavItem === "Resources"
                       ? "bg-primary text-black"
                       : "bg-navItemGradient text-primary"
-                  } font-medium text-sm -tracking-[0.28px] cursor-pointer`}
+                  } font-medium text-sm -tracking-[0.28px] cursor-pointer `}
                 >
                   Resources
                   <svg
@@ -246,7 +246,7 @@ export const NavBar = () => {
                         setIsMobileMenuVisible(false);
                       }}
                         to="/faq"
-                        className="px-4 py-3 rounded-[100px] w-full text-center text-primary bg-navItemGradient backdrop-blur-[6px] font-medium text-sm -tracking-[0.28px] cursor-pointer"
+                        className="px-4 py-3 rounded-[100px] w-full text-center text-primary bg-navItemGradient backdrop-blur-[6px] font-medium text-sm -tracking-[0.28px] cursor-pointer hover:bg-primary hover:text-black"
                       >
                         Faq's
                       </Link>
@@ -256,7 +256,7 @@ export const NavBar = () => {
                         setIsMobileMenuVisible(false);
                       }}
                         to="/changelog"
-                        className="px-4 py-3 rounded-[100px] w-full text-center text-primary bg-navItemGradient backdrop-blur-[6px] font-medium text-sm -tracking-[0.28px] cursor-pointer"
+                        className="px-4 py-3 rounded-[100px] w-full text-center text-primary bg-navItemGradient backdrop-blur-[6px] font-medium text-sm -tracking-[0.28px] cursor-pointer hover:bg-primary hover:text-black"
                       >
                         Changelog
                       </Link>
@@ -266,7 +266,7 @@ export const NavBar = () => {
                         setIsMobileMenuVisible(false);
                       }}
                         to="/blog"
-                        className="px-4 py-3 rounded-[100px] w-full text-center text-primary bg-navItemGradient backdrop-blur-[6px] font-medium text-sm -tracking-[0.28px] cursor-pointer"
+                        className="px-4 py-3 rounded-[100px] w-full text-center text-primary bg-navItemGradient backdrop-blur-[6px] font-medium text-sm -tracking-[0.28px] cursor-pointer hover:bg-primary hover:text-black"
                       >
                         Blog
                       </Link>
@@ -284,7 +284,7 @@ export const NavBar = () => {
                     selectedNavItem === "Contact"
                       ? "bg-primary text-black"
                       : "bg-navItemGradient text-primary"
-                  } font-medium text-sm -tracking-[0.28px] backdrop-blur-[6px] cursor-pointer`}
+                  } font-medium text-sm -tracking-[0.28px] backdrop-blur-[6px] cursor-pointer hover:bg-primary hover:text-black `}
                 >
                   Contact
                 </Link>

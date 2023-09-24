@@ -78,11 +78,11 @@ export const NavBar = () => {
                 selectedNavItem === "Resources"
                   ? "bg-primary text-black"
                   : "bg-navItemGradient text-primary"
-              } font-medium text-sm -tracking-[0.28px] cursor-pointer hover:bg-primary hover:text-black`}
+              } font-medium text-sm -tracking-[0.28px] cursor-pointer hover:bg-primary hover:text-black group`}
             >
               Resources
               <svg
-                className={`transform ${isDropdownVisible ? "rotate-180" : ""}`}
+                className={`transform ${isDropdownVisible ? "rotate-180" : ""} fill-current text-primary group-hover:text-black`}
                 width="20px"
                 height="20px"
                 viewBox="0 0 24 24"
@@ -93,7 +93,7 @@ export const NavBar = () => {
                 <g>
                   <path
                     d="M7 10l5 5 5-5"
-                    fill={selectedNavItem === "Resources" ? "#000" : "#FF993C"}
+                    fill={selectedNavItem === "Resources" ? "#000" : "currentColor"}
                   />
                 </g>
               </svg>
@@ -144,7 +144,7 @@ export const NavBar = () => {
         </h1>
       </div>
       <div className={`max-w-[620px] w-full flex justify-end gap-x-1`}>
-        <button className="h-fit px-4 py-3 bg-primary rounded-[100px] backdrop-blur-[6px] text-black font-medium text-sm -tracking-[0.28px] z-10 flex-shrink hover:bg-navItemGradient hover:text-primary">
+        <button className="h-fit px-4 py-3 bg-primary rounded-[100px] backdrop-blur-[6px] text-black font-medium text-sm -tracking-[0.28px] z-10 flex-shrink">
           waitlist
         </button>
         {size.width <= 1242 && (
@@ -184,7 +184,7 @@ export const NavBar = () => {
                     selectedNavItem === "Home"
                       ? "bg-primary text-black"
                       : "bg-navItemGradient text-primary"
-                  } font-medium text-sm -tracking-[0.28px] cursor-pointer hover:bg-primary hover:text-black`}
+                  } font-medium text-sm -tracking-[0.28px] cursor-pointer hover:bg-primary hover:text-black justify-center`}
                 >
                   Home
                 </Link>
@@ -199,7 +199,7 @@ export const NavBar = () => {
                     selectedNavItem === "Platform Solutions"
                       ? "bg-primary text-black"
                       : "bg-navItemGradient text-primary"
-                  } font-medium text-sm -tracking-[0.28px] backdrop-blur-[6px] cursor-pointer hover:bg-primary hover:text-black`}
+                  } font-medium text-sm -tracking-[0.28px] backdrop-blur-[6px] cursor-pointer hover:bg-primary hover:text-black text-center`}
                 >
                   Platform Solutions
                 </Link>
@@ -212,13 +212,13 @@ export const NavBar = () => {
                     selectedNavItem === "Resources"
                       ? "bg-primary text-black"
                       : "bg-navItemGradient text-primary"
-                  } font-medium text-sm -tracking-[0.28px] cursor-pointer `}
+                  } font-medium text-sm -tracking-[0.28px] cursor-pointer hover:bg-primary hover:text-black group text-center`}
                 >
                   Resources
                   <svg
                     className={`transform ${
                       isDropdownVisible ? "rotate-180" : ""
-                    }`}
+                    } fill-current text-primary group-hover:text-black`}
                     width="20px"
                     height="20px"
                     viewBox="0 0 24 24"
@@ -230,7 +230,7 @@ export const NavBar = () => {
                       <path
                         d="M7 10l5 5 5-5"
                         fill={
-                          selectedNavItem === "Resources" ? "#000" : "#FF993C"
+                          selectedNavItem === "Resources" ? "#000" : "currentColor"
                         }
                       />
                     </g>

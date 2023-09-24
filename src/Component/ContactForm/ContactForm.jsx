@@ -4,7 +4,7 @@ export default function ContactForm() {
   return (
     <div className=" px-4 md:px-[120px] my-[62px]">
       <div className=" grid grid-cols-2">
-        <div className="col-span-1 pt-8">
+        <div className="col-span-1 pt-6">
           <h4 className=" hover-scale text-[42px] sm:text-[52px] lg:text-[4.5vw] xl:text-[5.5vw] text-primary font-sfPro uppercase leading-none">
             L<span className="font-gridular">e</span>t's coll
             <span className="font-gridular">a</span>borate
@@ -19,19 +19,19 @@ export default function ContactForm() {
        <div className="flex flex-col gap-8">
        <div className="grid grid-cols-2 gap-5">
           <label className="text-primary font-gridular border-dotted border-b border-orangeGradient uppercase">Name</label>
-          <input type="text" placeholder=" Your Name" className=" py-2 font-gridular placeholder-orangeGradient text-[16px] sm:text-[32px] bg-them-black h-10 w-full border-b border-primary text-primary focus:outline-none uppercase" />
+          <input type="text" placeholder=" Your Name" className=" py-2 font-gridular placeholder-orangeGradient text-[16px] sm:text-[32px] bg-theme-black h-10 w-full border-b border-primary text-primary focus:outline-none uppercase" />
         </div>
         <div className="grid grid-cols-2 gap-5">
           <label className="text-primary font-gridular border-dotted border-b border-orangeGradient uppercase">Email</label>
-          <input type="email" placeholder="Your Email" className=" py-2 font-gridular placeholder-orangeGradient text-[16px] sm:text-[32px] bg-them-black h-10 w-full border-b border-primary text-primary focus:outline-none uppercase" />
+          <input type="email" placeholder="Your Email" className=" py-2 font-gridular placeholder-orangeGradient text-[16px] sm:text-[32px] bg-theme-black h-10 w-full border-b border-primary text-primary focus:outline-none uppercase" />
         </div>
         <div className="grid grid-cols-2 gap-5">
           <label className="text-primary font-gridular border-dotted border-b border-orangeGradient uppercase">Phone</label>
-          <input type="text" placeholder="Phone" className=" py-2 font-gridular placeholder-orangeGradient text-[16px] sm:text-[32px] bg-them-black h-10 w-full border-b border-primary text-primary focus:outline-none uppercase" />
+          <input type="text" placeholder="Phone" className=" py-2 font-gridular placeholder-orangeGradient text-[16px] sm:text-[32px] bg-theme-black h-10 w-full border-b border-primary text-primary focus:outline-none uppercase" />
         </div>
         <div className="grid grid-cols-2 gap-5">
           <label className="text-primary font-gridular border-dotted border-b border-orangeGradient uppercase">Company</label>
-          <input type="text" placeholder="Your Company" className=" py-2 font-gridular placeholder-orangeGradient text-[16px] sm:text-[32px] bg-them-black h-10 w-full border-b border-primary text-primary focus:outline-none uppercase" />
+          <input type="text" placeholder="Your Company" className=" py-2 font-gridular placeholder-orangeGradient text-[16px] sm:text-[32px] bg-theme-black h-10 w-full border-b border-primary text-primary focus:outline-none uppercase" />
         </div>
         <div className="grid grid-cols-2 gap-5">
           <label className=""></label>

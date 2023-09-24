@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function ChangelogItem() {
   return (
@@ -8,7 +9,7 @@ export default function ChangelogItem() {
         </div>
         <div className='border-l border-primary pl-8 pb-8 col-span-3 md:col-span-1 sm:col-span-2 '>
         <h4 className='text-orangeGradient text-[36px] font-gridular uppercase leading-none pb-4'>Connectkit update ISI</h4>
-        <p className='px-4 py-3 rounded-[100px] font-medium text-sm -tracking-[0.28px] cursor-pointer bg-navItemGradient text-primary flex w-fit group hover:bg-primary hover:text-black items-center'>More Info <svg
+        <Link to='/blogdetail' className='px-4 py-3 rounded-[100px] font-medium text-sm -tracking-[0.28px] cursor-pointer bg-navItemGradient text-primary flex w-fit group hover:bg-primary hover:text-black items-center'>More Info <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -32,7 +33,7 @@ export default function ChangelogItem() {
                   fill="currentColor"
                 />
               </g>
-            </svg></p>
+            </svg></Link>
         </div>
         <div className='w-full pb-8 md:col-span-1 col-span-3'>
         <p className='text-primary font-plex-mono'>This update improves how ConnectKit handles multiple injected wallets.</p>

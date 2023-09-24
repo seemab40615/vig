@@ -8,14 +8,24 @@ export default function BlogDetail() {
     <>
       <div className="bg-secondary my-[62px] px-4 md:px-[120px]">
         <div className="grid grid-cols-1 md:grid-cols-3 py-[42px] gap-8">
-          <div>
+          <div className=" z-10">
             <Link to="/blog">
-            <p className="px-4 py-3 rounded-[100px] font-medium text-sm -tracking-[0.28px] cursor-pointer bg-navItemGradient text-primary flex w-fit">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-<path d="M16.667 10L3.33366 10M3.33366 10L8.33366 15M3.33366 10L8.33366 5" stroke="#FF993C" stroke-width="1.5"/>
-</svg>{" "} Back to news
-            </p>
+              <p className="px-4 py-3 rounded-[100px] font-medium text-sm -tracking-[0.28px] cursor-pointer bg-navItemGradient text-primary flex w-fit group hover:bg-primary hover:text-black">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  className="stroke-current text-primary group-hover:text-black"
+                >
+                  <path
+                    d="M16.667 10L3.33366 10M3.33366 10L8.33366 15M3.33366 10L8.33366 5"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  />
+                </svg>{" "}  Back to news
+               </p>
             </Link>
           </div>
           <div className="w-full">
@@ -60,8 +70,8 @@ export default function BlogDetail() {
               network, while the consensus layer handles the agreement between
               nodes about those changes.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 pt-8 gap-x-4">
-              <div className="text-primary font-plex-mono w-full">
+            <div className="grid grid-cols-1 md:grid-cols-2 pt-8 gap-4 place-items-center">
+              <div className="text-primary font-plex-mono w-full flex justify-center">
                 <img src={DetailImg1} alt="Blog Detail" />
               </div>
               <div className="flex flex-col gap-y-4">

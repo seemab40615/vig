@@ -64,3 +64,21 @@
 .hover-scale:hover {
   transform: scale(1.02); /* Scale the element on hover */
 }
+
+.gradient-border {
+  position: relative;
+}
+
+.gradient-border::before {
+  content: '';
+  position: absolute;
+  top: 0; /* Adjust to control the width of the border */
+  height: 100%;
+  width: 2px; /* Adjust to control the width of the border */
+  background-image: linear-gradient(
+    to bottom,
+    #FF993C 0%,
+    rgba(255, 153, 60, 0.05) 50%,
+    rgba(255, 153, 60, 0) 80%
+  ); /* Adjust colors as needed */
+}

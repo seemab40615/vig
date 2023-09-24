@@ -31,7 +31,7 @@ export const NavBar = () => {
     if (size.width > 1242 && isMobileMenuVisible) {
       setIsMobileMenuVisible(false);
     }
-  }, [size.width, isMobileMenuVisible]);
+  }, [size.width, isMobileMenuVisible , selectedNavItem]);
   
 
 
@@ -166,7 +166,7 @@ export const NavBar = () => {
           </ul>
         )}
         <h1 className={`text-primary font-gridular text-2xl uppercase z-10`}>
-          <Link to='/'>VIG</Link>
+          <Link to='/' onClick={()=>setSelectedNavItem("Home")}>VIG</Link>
         </h1>
       </div>
       <div className={`max-w-[620px] w-full flex justify-end gap-x-1`}>
@@ -193,7 +193,7 @@ export const NavBar = () => {
                 <path
                   d="M2.5 7.08337H17.5M2.5 12.9167H17.5"
                   stroke="#FF993C"
-                  stroke-width="1.5"
+                  strokeWidth="1.5"
                   stroke-linecap="round"
                   stroke-linejoin="round"
                 />

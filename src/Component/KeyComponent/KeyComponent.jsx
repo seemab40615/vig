@@ -1,11 +1,11 @@
 import React from "react";
 export default function KeyComponent() {
   return (
-    <div className="grid md:grid-cols-[minmax(0px,_300px)_minmax(0px,_450px)_minmax(0px,_450px)] xs:grid-cols-1 xs:gap-y-6 xs:px-4 md:px-0 mt-[100px]">
-      <div className=" md:col-span-3 text-[16px] text-primary font-gridular">
+    <div className="grid md:grid-cols-[minmax(0px,_300px),1fr] grid-cols-1 mt-[100px] xs:px-4 md:px-0">
+      <div className=" text-[16px] text-primary font-gridular mb-8">
         KEY COMPONENTS
       </div>
-      <div className="flex flex-col col-span-9">
+      <div className="flex flex-col grid-cols-2">
         <div className="flex flex-col pb-[42px] gap-y-[42px] border-b border-primary">
           <div className="flex gap-x-4">
             <p className="font-gridular text-primary">01</p>

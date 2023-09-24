@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import aboutGif from "../../assets/animations/about.gif";
 import { Button } from "../UI/Button";
 import { Gradient } from "../UI/Gradient";
@@ -38,10 +39,10 @@ export const About = () => (
         various oddsmakers, the platform ensures bettors remain aware of their
         positions and potential liquidation scenarios.
       </p>
-      <Button
-        className="bg-darkPrimary bg-opacity-10 text-primary"
+      <Link to="/contact"><Button
+        className="bg-darkPrimary bg-opacity-10 text-primary hover:text-black hover:bg-primary"
         text="Contact us"
-      />
+      /></Link>
     </div>
     <Gradient className="-left-[680px] top-0 w-[800px] h-[800px]" />
   </div>

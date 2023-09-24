@@ -41,7 +41,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="flex justify-between flex-wrap mt-[60px] mb-4 w-full overflow-hidden">
+      <div className="flex justify-around sm:justify-between flex-wrap mt-[60px] mb-4 w-full overflow-hidden">
         <ul className="flex gap-x-1">
           <li
             className={`px-4 py-3 rounded-[100px] font-medium text-sm -tracking-[0.28px] cursor-pointer text-primary`}
@@ -61,9 +61,9 @@ export default function Footer() {
             Privacy policy
           </li>
         </ul>
-        <ul className="flex gap-x-1">
+        <ul className="flex gap-x-1 ">
           <li
-            className={`px-2 sm:px-4 py-3 rounded-[100px] font-medium text-[14px] sm:text-sm -tracking-[0.28px] cursor-pointer bg-navItemGradient text-primary hover:bg-primary hover:text-black flex group`}
+            className={`px-4  py-3 rounded-[100px] font-medium text-[14px] sm:text-sm -tracking-[0.28px] cursor-pointer bg-navItemGradient text-primary hover:bg-primary hover:text-black flex group items-center`}
           >
             Twitter{" "}
             <svg
@@ -72,7 +72,7 @@ export default function Footer() {
               height="24"
               viewBox="0 0 24 24"
               fill="none"
-              className="fill-current text-primary group-hover:text-black"
+              className="fill-current text-primary group-hover:text-black hidden sm:flex"
             >
               <mask
                 id="mask0_170_158"
@@ -93,7 +93,7 @@ export default function Footer() {
             </svg>
           </li>
           <li
-            className={` px-2 sm:px-4 py-3 rounded-[100px] font-medium text-[14px] sm:text-sm -tracking-[0.28px] cursor-pointer bg-navItemGradient text-primary hover:bg-primary hover:text-black flex group`}
+            className={` px-4  py-3 rounded-[100px] font-medium text-[14px] sm:text-sm -tracking-[0.28px] cursor-pointer bg-navItemGradient text-primary hover:bg-primary hover:text-black flex group items-center`}
           >
             Linked In{" "}
             <svg
@@ -102,7 +102,7 @@ export default function Footer() {
               height="24"
               viewBox="0 0 24 24"
               fill="none"
-              className="fill-current text-primary group-hover:text-black"
+              className="fill-current text-primary group-hover:text-black hidden sm:flex"
             >
               <mask
                 id="mask0_170_158"
@@ -123,7 +123,7 @@ export default function Footer() {
             </svg>
           </li>
           <li
-            className={`px-2 sm:px-4 py-3 rounded-[100px] font-medium text-[14px] sm:text-sm -tracking-[0.28px] cursor-pointer hover:bg-primary hover:text-black bg-navItemGradient text-primary flex group`}
+            className={`px-4  py-3 rounded-[100px] font-medium text-[14px] sm:text-sm -tracking-[0.28px] cursor-pointer hover:bg-primary hover:text-black bg-navItemGradient text-primary flex group items-center`}
           >
             Facebook{" "}
             <svg
@@ -132,7 +132,7 @@ export default function Footer() {
               height="24"
               viewBox="0 0 24 24"
               fill="none"
-              className="fill-current text-primary group-hover:text-black"
+              className="fill-current text-primary group-hover:text-black hidden sm:flex"
             >
               <mask
                 id="mask0_170_158"

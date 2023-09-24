@@ -1,15 +1,15 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-export default function BlogItem() {
+export default function BlogItem( {children , description}) {
   return (
     <div className='grid grid-cols-2 md:grid-cols-3 py-[42px] border-b border-primary gap-8'>
-        <div>
+        <div className='col-span-full md:col-span-1'>
             <p className='text-orangeGradient font-gridular uppercase pb-4'>News</p>
             <p className='text-primary font-gridular uppercase'>15 sep, 2022</p>
         </div>
-        <div className=''>
-        <h4 className=' hover-scale text-orangeGradient text-[36px] font-gridular uppercase leading-none pb-4'>News</h4>
+        <div className='col-span-full md:col-span-1'>
+        {children}
         <Link to='/blogdetail' className='px-4 py-3 rounded-[100px] font-medium text-sm -tracking-[0.28px] cursor-pointer bg-navItemGradient text-primary hover:text-black hover:bg-primary flex w-fit group items-center'>Read <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -37,7 +37,7 @@ export default function BlogItem() {
             </svg></Link>
         </div>
         <div className='w-full col-span-full md:col-span-1'>
-        <p className='text-primary font-plex-mono'>Users can amplify their potential payouts using the platform's leverage system, which multiplies the potential payout but also the risk.</p>
+        <p className='text-primary font-plex-mono'>{description}</p>
         </div>
       
     </div>

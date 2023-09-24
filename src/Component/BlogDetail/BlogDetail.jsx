@@ -22,15 +22,15 @@ export default function BlogDetail() {
                   <path
                     d="M16.667 10L3.33366 10M3.33366 10L8.33366 15M3.33366 10L8.33366 5"
                     stroke="currentColor"
-                    stroke-width="1.5"
+                    strokeWidth="1.5"
                   />
                 </svg>{" "}  Back to news
                </p>
             </Link>
           </div>
           <div className="w-full">
-            <h4 className=" hover-scale text-orangeGradient text-[36px] font-gridular uppercase leading-none pb-4">
-              Users can amplify their potential payouts using
+            <h4 className=" hover-scale text-primary text-[36px] font-sfPro uppercase leading-none pb-4">
+             Rh<span className="font-gridular">o</span>des <span className="font-gridular">t</span>ells Dame Di<span className="font-gridular">n</span>enage o<span className="font-gridular">f</span> <span className="font-gridular">‘</span>specific co<span className="font-gridular">n</span>cerns’ <span className="font-gridular">o</span>n mis<span className="font-gridular">u</span>se of stat<span className="font-gridular">i</span>stics
             </h4>
             <p className="text-primary font-plex-mono">
               The Merge is finally here. While the Ethereum community celebrates

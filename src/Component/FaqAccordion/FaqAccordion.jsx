@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import { useCallback, useState } from "react";
+import { Gradient } from "../UI/Gradient";
 const classNames = (...classes) => classes.filter(Boolean).join(" ");
 
 export const FaqAccordion = ({
@@ -36,72 +37,38 @@ export const FaqAccordion = ({
                 <p className=" font-gridular text-primary">{item[numbAttr]}</p>
                 <p className="w-[370px]">{item[keyAttr]}</p>
                 <span
-                  className={`w-[30px] h-[30px] text-center ${
+                  className={`relative max-w-[30px] w-full h-[30px] text-center ${
                     current === index ? "bg-primary" : "bg-navItemGradient"
                   }  rounded-full text-center flex justify-center items-center`}
                 >
-                  {current === index ? (
-                    <span>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20"
-                        height="20"
-                        viewBox="0 0 20 20"
-                        fill="none"
-                      >
-                        <mask
-                          id="mask0_564_249"
-                          maskUnits="userSpaceOnUse"
-                          x="0"
-                          y="0"
-                          width="20"
-                          height="20"
-                        >
-                          <rect
-                            x="20"
-                            y="20"
-                            width="20"
-                            height="20"
-                            transform="rotate(180 20 20)"
-                            fill="#D9D9D9"
-                          />
-                        </mask>
-                        <g mask="url(#mask0_564_249)">
-                          <path
-                            d="M10.0001 7.78842L13.6699 11.4583L6.33026 11.4583L10.0001 7.78842Z"
-                            fill="black"
-                          />
-                        </g>
-                      </svg>
-                    </span>
-                  ) : (
-                    <span>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20"
-                        height="21"
-                        viewBox="0 0 20 21"
-                        fill="none"
-                      >
-                        <mask
-                          id="mask0_564_125"
-                          maskUnits="userSpaceOnUse"
-                          x="0"
-                          y="0"
-                          width="20"
-                          height="21"
-                        >
-                          <rect y="0.5" width="20" height="20" fill="#D9D9D9" />
-                        </mask>
-                        <g mask="url(#mask0_564_125)">
-                          <path
-                            d="M9.99991 12.7116L6.33008 9.04175H13.6697L9.99991 12.7116Z"
-                            fill="#FF993C"
-                          />
-                        </g>
-                      </svg>
-                    </span>
-                  )}
+                  {current === index && <Gradient className="w-[100px] h-[100px]" />}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="21"
+                    viewBox="0 0 20 21"
+                    fill="none"
+                    className={`transform ${
+                      current === index ? "rotate-180" : "rotate-[-180]"
+                    }`}
+                  >
+                    <mask
+                      id="mask0"
+                      maskUnits="userSpaceOnUse"
+                      x="0"
+                      y="0"
+                      width="20"
+                      height="21"
+                    >
+                      <rect y="0.5" width="20" height="20" fill="#D9D9D9" />
+                    </mask>
+                    <g mask="url(#mask0)">
+                      <path
+                        d="M9.99991 12.7116L6.33008 9.04175H13.6697L9.99991 12.7116Z"
+                        fill={current === index ? "black" : "#FF993C"}
+                      />
+                    </g>
+                  </svg>
                 </span>
               </div>
             </div>
@@ -109,7 +76,9 @@ export const FaqAccordion = ({
           <div
             className={classNames(
               "transition-all duration-500 ease-in-out overflow-auto mx-2",
-              current === index ? "p-2 border-t-2 border-primary" : "p-0 border-primary"
+              current === index
+                ? "p-2 border-t-2 border-primary"
+                : "p-0 border-primary"
             )}
             style={{ maxHeight: current === index ? height : 0 }}
           >

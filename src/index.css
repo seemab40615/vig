@@ -41,6 +41,7 @@
   );
 }
 
+
 .bg-linear-gradient-effect-waitlist {
   background: linear-gradient(
     180deg,
@@ -48,6 +49,7 @@
     rgba(255, 153, 60, 0.05) 50%,
     rgba(255, 153, 60, 0) 80%
   );
+  
 }
 
 ::-webkit-scrollbar {

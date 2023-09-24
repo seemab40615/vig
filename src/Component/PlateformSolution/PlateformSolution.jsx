@@ -24,7 +24,7 @@ export default function PlateformSolution() {
     "Our dedicated support team is always ready to assist you. Whether you have platform-specific queries or need insights into the betting world, we’re here to help round the clock.";
 
   return (
-    <div className="flex flex-col gap-y-0 my-14 px-4 md:px-[120px] w-full overflow-hidden">
+    <div className="flex flex-col gap-y-0 py-[156px] px-4 md:px-[120px] w-full overflow-hidden">
       <div className=" grid grid-cols-2">
       <div className="col-span-1 pt-8">
         <h4 className=" hover-scale text-[52px] lg:text-[4vw] xl:text-[5.5vw] text-primary font-sfPro uppercase leading-none">

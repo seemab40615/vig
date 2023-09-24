@@ -4,7 +4,6 @@ export const Layout = ({ children }) => {
       <div className="bg-theme-black max-w-maxSize w-full mx-auto">
         {children}
       </div>
-      ;
     </div>
   );
 };

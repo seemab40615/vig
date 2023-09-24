@@ -5,10 +5,12 @@ import FooterDollar from "../../assets/Images/Footerdollor.svg";
 
 export default function Footer() {
   return (
-    <div className={`flex flex-col px-4 md:px-28  w-full overflow-hidden bg-secondary`}>
-      <div className="relative text-white flex flex-wrap xs:justify-center md:justify-between overflow-hidden w-full">
-        <div className="flex justify-between  h-fit pt-4">
-          <div className="flex gap-x-1">
+    <div
+      className={`flex flex-col px-4 md:px-28 py-[42px] w-full overflow-hidden bg-secondary`}
+    >
+      <div className="flex md:justify-between xs:items-center md:items-start xs:flex-col md:flex-row">
+        <div className="flex w-full max-w-[570px] h-fit xs:justify-between md:justify-start">
+          <div className="flex gap-x-1 max-w-[573px]">
             <h1 className=" hover-scale text-[52px] lg:text-[4vw] xl:text-[5.5vw]  text-primary font-sfPro font-normal leading-none">
               READ<span className="font-gridular">Y</span> TO
               <br /> SEI<span className="font-gridular">Z</span>E T
@@ -23,21 +25,22 @@ export default function Footer() {
             <img src={FooterDollar} alt="Footer Dollar" />
           </div>
         </div>
-        <div className=" flex justify-start pt-4 xlg:pl-[115px] lg:min-w-[500px]">
-          <div className="w-full">
-            <p className="max-w-[400px] flex justify-start text-orangeGradient">
+        <div className=" flex flex-col gap-x-4 justify-between max-w-[570px] w-full">
+          <div>
+            {" "}
+            <p className="max-w-[400px] flex justify-center text-orangeGradient">
               Join Vig today and unlock a new realm of possibilities. Amplify
               your potential payouts with our cutting-edge leveraged 'sports
               futures' algorithms, and embrace the thrill of high-risk,
               high-reward wagering
             </p>
-            <div className=" hover-light px-4 py-3 mt-4 rounded-[100px] text-primary w-fit bg-navItemGradient hover:bg-primary hover:text-black font-medium text-sm -tracking-[0.28px] backdrop-blur-[6px] cursor-pointer">
+            <div className=" hover-light px-4 py-3 mt-4 rounded-[100px] text-primary w-fit h-fit bg-navItemGradient hover:bg-primary hover:text-black font-medium text-sm -tracking-[0.28px] backdrop-blur-[6px] cursor-pointer">
               Connect wallet
             </div>
-            <div className="flex justify-end relative">
-              <Gradient className="top-[4rem] right-0 w-[200px] h-[250px]" />
-              <img src={FooterImage} alt="FooterImage" />
-            </div>
+          </div>
+          <div className="flex justify-end relative">
+            <Gradient className="top-[4rem] right-0 w-[200px] h-[250px]" />
+            <img src={FooterImage} alt="FooterImage" />
           </div>
         </div>
       </div>
@@ -154,8 +157,6 @@ export default function Footer() {
           </li>
         </ul>
       </div>
-
-
     </div>
   );
 }

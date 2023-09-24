@@ -1,6 +1,6 @@
 import React from "react";
 import FeatureCard from "../FeatureCard/FeatureCard";
-import plateformImage from "../../assets/Images/plateform.svg"
+import plateformImage from "../../assets/animations/platform-solutions.gif"
 export default function PlateformSolution() {
   const cardOne =
     "Harness the power of amplified stakes. Depending on your risk appetite and market assessment, opt for a leverage multiplier that suits your strategy, from 2x up to 13x.";

@@ -1,7 +1,7 @@
 import React from "react";
 import { Gradient } from "../UI/Gradient";
 import FooterImage from "../../assets/Images/Footer.png";
-import FooterDollar from "../../assets/Images/Footerdollor.svg";
+import FooterDollar from "../../assets/animations/vs.gif";
 
 export default function Footer() {
   return (
@@ -9,8 +9,8 @@ export default function Footer() {
       className={`flex flex-col px-4 md:px-28 py-[42px] w-full overflow-hidden bg-secondary`}
     >
       <div className="flex md:justify-between xs:items-center md:items-start xs:flex-col md:flex-row">
-        <div className="flex w-full max-w-[570px] h-fit xs:justify-between md:justify-start">
-          <div className="flex gap-x-1 max-w-[573px]">
+        <div className="flex gap-x-4 w-full max-w-[570px] h-fit xs:justify-between md:justify-start">
+          <div className="flex gap-x-1 max-w-[452px]">
             <h1 className=" hover-scale text-[52px] lg:text-[4vw] xl:text-[5.5vw]  text-primary font-sfPro font-normal leading-none">
               READ<span className="font-gridular">Y</span> TO
               <br /> SEI<span className="font-gridular">Z</span>E T

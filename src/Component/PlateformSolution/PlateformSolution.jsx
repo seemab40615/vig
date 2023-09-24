@@ -26,7 +26,7 @@ export default function PlateformSolution() {
   return (
     <div className="flex flex-col gap-y-0 py-[156px] px-4 md:px-[120px] w-full overflow-hidden">
       <div className=" grid grid-cols-2">
-      <div className="col-span-1 pt-8">
+      <div className="col-span-1">
         <h4 className=" hover-scale text-[52px] lg:text-[4vw] xl:text-[5.5vw] text-primary font-sfPro uppercase leading-none">
         Pla<span className="font-gridular">t</span>for<span className="font-gridular">m</span> <span className="font-gridular">s</span>oluti<span className="font-gridular">o</span>ns
           </h4>

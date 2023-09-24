@@ -30,7 +30,7 @@ export default function Blog() {
 
   return (
     <div className="px-4 sm:px-[120px] py-[150px]">
-      <div className="my-20 flex">
+      <div className="flex">
         <h4 className="hover-scale text-[52px] md:text-[96px] mb-10 text-primary font-sfPro uppercase leading-none">
           B<span className="font-gridular">L</span>O
           <span className="font-gridular">G</span>

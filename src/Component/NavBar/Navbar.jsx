@@ -176,7 +176,7 @@ export const NavBar = () => {
         </div>
 
         <div className={`max-w-[620px] w-full flex justify-end gap-x-1`}>
-          <button className="h-fit px-4 py-3 bg-primary rounded-[100px] backdrop-blur-[6px] text-black font-medium text-sm -tracking-[0.28px] z-10 flex-shrink hover:bg-navItemGradient hover:text-primary">
+          <button className="h-fit px-4 py-3 bg-primary rounded-[100px] backdrop-blur-[6px] text-black font-medium text-sm -tracking-[0.28px] z-10 flex-shrink">
             waitlist
           </button>
           {size.width <= 1242 && (

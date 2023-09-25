@@ -41,7 +41,6 @@
   );
 }
 
-
 .bg-linear-gradient-effect-waitlist {
   background: linear-gradient(
     180deg,
@@ -49,13 +48,15 @@
     rgba(255, 153, 60, 0.05) 50%,
     rgba(255, 153, 60, 0) 80%
   );
-  
+}
+
+.footer-bg {
+  background: linear-gradient(180deg, #542800 0%, #542800 100%);
 }
 
 ::-webkit-scrollbar {
   display: none;
 }
-
 
 .hover-scale {
   transition: transform 0.6s ease-in-out; /* Add smooth transition */
@@ -70,15 +71,27 @@
 }
 
 .gradient-border::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0; /* Adjust to control the width of the border */
   height: 100%;
   width: 2px; /* Adjust to control the width of the border */
   background-image: linear-gradient(
     to bottom,
-    #FF993C 0%,
+    #ff993c 0%,
     rgba(255, 153, 60, 0.05) 50%,
     rgba(255, 153, 60, 0) 80%
   ); /* Adjust colors as needed */
+}
+
+@keyframes moveY {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(82%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }

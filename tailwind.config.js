@@ -44,6 +44,9 @@ module.exports = {
         'none': 'none',
         'blur': '6px',
       },
+      animation: {
+        'move-y': 'moveY 5s infinite',
+      }
     },
   },
   plugins: [],

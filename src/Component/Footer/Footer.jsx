@@ -5,14 +5,14 @@ import FooterDollar from "../../assets/Images/Footerdollor.svg";
 
 export default function Footer() {
   return (
-    <div className="-mx-[113px] px-[120px] footer-bg">
+    <div className="footer-bg">
       <div
       className={`flex flex-col px-4 md:px-28 py-[42px] w-full overflow-hidden footer-bg`}
     >
       <div className="flex gap-x-8 gap-y-10 md:justify-between xs:items-center md:items-start xs:flex-col md:flex-row">
-        <div className="flex gap-x-4 w-full max-w-[632px] h-fit xs:justify-between md:justify-between ">
-          <div className="flex gap-x-1 max-w-[573px] w-full">
-            <h1 className=" hover-scale text-[52px] lg:text-[4vw] xl:text-[96px] xl:leading-[96px] text-primary font-sfPro font-normal leading-none">
+        <div className="flex gap-x-2 sm:gap-x-10 md:gap-x-14 lg:gap-x-20 max-w-[732px] h-fit xs:justify-between md:justify-between ">
+          <div className="flex gap-x-1 max-w-[573px]">
+            <h1 className=" hover-scale text-[52px] lg:text-[6vw] xl:text-[96px] xl:leading-[96px] text-primary font-sfPro font-normal leading-none">
               READ<span className="font-gridular">Y</span> TO
               <br /> SEI<span className="font-gridular">Z</span>E T
               <span className="font-gridular">HE</span>

@@ -23,7 +23,6 @@ function App() {
           <Route path="/blogdetail" element={<BlogDetail />} />
           <Route path="/contact" element={<ContactForm />} />
           <Route path="/faq" element={<Faq />} />
-
           <Route path="*" element={<HomeSection />} />
         </Routes>
         <Footer />

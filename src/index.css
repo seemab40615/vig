@@ -88,14 +88,11 @@
   0% {
     transform: translateY(0);
   }
-  25% {
+  33% {
     transform: translateY(40%);
   }
-  50% {
+  66% {
     transform: translateY(80%);
-  }
-  75% {
-    transform: translateY(40%);
   }
   100% {
     transform: translateY(0);

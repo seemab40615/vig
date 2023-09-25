@@ -45,7 +45,7 @@ module.exports = {
         'blur': '6px',
       },
       animation: {
-        'move-y': 'moveY 5s infinite',
+        'move-y': 'moveY 4s infinite',
       }
     },
   },

@@ -32,7 +32,7 @@ export default function PlateformSolution() {
           </h4>
       </div>    
       <div className=" col-span-2 md:col-span-1 flex justify-end">
-            <img src={plateformImage} alt="PlateForm Solution" srcset={plateformImage} />
+            <img src={plateformImage} alt="PlateForm Solution" srcSet={plateformImage} />
       </div>
 
       </div>

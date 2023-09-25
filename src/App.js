@@ -10,6 +10,7 @@ import Changelog from './Component/Changelog/Changelog';
 import BlogDetail from './Component/BlogDetail/BlogDetail';
 import ContactForm from './Component/ContactForm/ContactForm';
 import Faq from './Component/Faq/Faq';
+
 function App() {
   return (
     <Router>

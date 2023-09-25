@@ -2,15 +2,17 @@ import React from "react";
 import { Gradient } from "../UI/Gradient";
 import FooterImage from "../../assets/Images/Footer.png";
 import FooterDollar from "../../assets/Images/Footerdollor.svg";
-
+import { useLocation  } from 'react-router-dom';
 export default function Footer() {
+  const {pathname} = useLocation ();
+  const footerClass = pathname === '/plateform' ? '' : 'footer-bg'
   return (
-    <div className="footer-bg">
+    <div className={footerClass}>
       <div
-      className={`flex flex-col px-4 md:px-28 py-[42px] w-full overflow-hidden footer-bg`}
+      className={`flex flex-col px-4 md:px-28 py-[42px] w-full overflow-hidden ${footerClass}`}
     >
       <div className="flex gap-x-8 gap-y-10 md:justify-between xs:items-center md:items-start xs:flex-col md:flex-row">
-        <div className="flex gap-x-2 sm:gap-x-10 md:gap-x-14 lg:gap-x-20 max-w-[732px] h-fit xs:justify-between md:justify-between ">
+        <div className="flex sm:gap-x-10 md:gap-x-14 lg:gap-x-18 max-w-[732px] h-fit xs:justify-between md:justify-between ">
           <div className="flex gap-x-1 max-w-[573px]">
             <h1 className=" hover-scale text-[52px] lg:text-[6vw] xl:text-[96px] xl:leading-[96px] text-primary font-sfPro font-normal leading-none">
               READ<span className="font-gridular">Y</span> TO
@@ -23,7 +25,7 @@ export default function Footer() {
             </h1>
           </div>
           <div className="text-primary font-gridular uppercase leading-none animate-move-y">
-            <img src={FooterDollar} alt="Footer Dollar"/>
+            <img className="w-[40px] lg:w-[60px]" src={FooterDollar} alt="Footer Dollar"/>
           </div>
         </div>
         <div className=" flex flex-col gap-x-4 justify-between max-w-[450px]">

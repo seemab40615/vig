@@ -213,7 +213,7 @@ export const NavBar = () => {
                       setSelectedNavItem("Home");
                       setIsMobileMenuVisible(false);
                     }}
-                    className={`h-10 flex justify-start items-center px-4 py-3 rounded-[100px] ${
+                    className={`h-10 flex justify-center items-center px-4 py-3 rounded-[100px] ${
                       selectedNavItem === "Home"
                         ? "bg-primary text-black"
                         : "bg-navItemGradient text-primary"
@@ -228,11 +228,11 @@ export const NavBar = () => {
                       setDropdownVisible(false);
                       setIsMobileMenuVisible(false);
                     }}
-                    className={`flex justify-start items-center h-10 px-4 py-3 rounded-[100px] ${
+                    className={`flex justify-center items-center h-10 px-4 py-3 rounded-[100px] ${
                       selectedNavItem === "Platform Solutions"
                         ? "bg-primary text-black"
                         : "bg-navItemGradient text-primary"
-                    } font-medium text-sm -tracking-[0.28px] backdrop-blur-[6px] cursor-pointer hover:bg-primary hover:text-black`}
+                    } font-medium text-sm -tracking-[0.28px] backdrop-blur-[6px] cursor-pointer hover:bg-primary hover:text-black text-center`}
                   >
                     Platform Solutions
                   </Link>

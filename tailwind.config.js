@@ -28,7 +28,8 @@ module.exports = {
         darkPrimary: '#FF993B',
         secondary: "#542800",
         'theme-black': "#100A04",
-        orangeGradient : 'rgba(255, 153, 59, 0.50);'
+        orangeGradient : 'rgba(255, 153, 59, 0.50);',
+        bgSecondary : '#1F1307'
         
       },
       fontFamily: {

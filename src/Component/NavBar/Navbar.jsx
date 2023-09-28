@@ -59,8 +59,8 @@ export const NavBar = () => {
   }, []);
 
   return (
-    <div className="text-white fixed top-0 left-0 w-full z-50 bg-transparent">
-      <div className="mx-auto max-w-[1440px] px-[42px] pt-4 w-full flex justify-between">
+    <div className="text-white fixed top-0 left-0 w-full z-50 bg-bgSecondary">
+      <div className="mx-auto max-w-[1440px] px-[42px] pt-4 w-full flex justify-between bg-bgSecondary items-center">
         <div className="flex justify-between max-w-[830px] w-full">
           {size.width >= 1242 && (
             <ul className="flex gap-x-1 z-20 w-full">

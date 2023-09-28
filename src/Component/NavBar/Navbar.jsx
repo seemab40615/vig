@@ -60,7 +60,7 @@ export const NavBar = () => {
 
   return (
     <div className="text-white fixed top-0 left-0 w-full z-50 bg-bgSecondary">
-      <div className="mx-auto max-w-[1440px] px-[42px] pt-4 w-full flex justify-between bg-bgSecondary items-center">
+      <div className="mx-auto max-w-[1440px] px-[42px] py-4 w-full flex justify-between bg-bgSecondary items-center">
         <div className="flex justify-between max-w-[830px] w-full">
           {size.width >= 1242 && (
             <ul className="flex gap-x-1 z-20 w-full">
@@ -279,7 +279,7 @@ export const NavBar = () => {
                           to="/faq"
                           className="px-4 py-3 rounded-[100px] w-full text-center text-primary bg-navItemGradient backdrop-blur-[6px] font-medium text-sm -tracking-[0.28px] cursor-pointer hover:bg-primary hover:text-black"
                         >
-                          Faq's
+                          FAQ's
                         </Link>
                         <Link
                           onClick={() => {

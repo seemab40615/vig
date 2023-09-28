@@ -4,7 +4,7 @@ import HomeSection from './Component/HomeSection/HomeSection';
 import Blog from './Component/Blog/Blog';
 import PlateformSolution from './Component/PlateformSolution/PlateformSolution';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { NavDashboard } from './Component/NavBar/NavDashboard';
+import { NavBar } from './Component/NavBar/Navbar';
 import Footer from './Component/Footer/Footer';
 import Changelog from './Component/Changelog/Changelog';
 import BlogDetail from './Component/BlogDetail/BlogDetail';
@@ -15,7 +15,7 @@ function App() {
   return (
     <Router>
       <Layout>
-        <NavDashboard />
+        <NavBar />
         <Routes>
           <Route exact path="/" element={<HomeSection />} />
           <Route path="/blog" element={<Blog />} />

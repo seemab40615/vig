@@ -58,11 +58,11 @@ export const NavDashboard = () => {
 
   return (
     <div className="text-white fixed top-0 left-0 w-full z-50 bg-bgSecondary">
-      <div className="mx-auto max-w-[1660px] px-[42px] py-4 w-full flex justify-between">
-        <div className="flex justify-between max-w-[830px] w-full">
+      <div className="mx-auto max-w-[1440px] px-[42px] py-4 w-full flex justify-between items-center">
+        <div className="flex justify-between max-w-[830px] w-full items-center">
           <Link
             to="/"
-            className={`text-primary font-gridular text-2xl uppercase z-10`}
+            className={`text-primary font-gridular text-[24px] uppercase z-10`}
             onClick={() => selectedNavItem("Home")}
           >
             VIG
@@ -75,7 +75,7 @@ export const NavDashboard = () => {
                   setSelectedNavItem("Home");
                   setDropdownVisible(false);
                 }}
-                className={`h-10 flex justify-start items-center px-4 py-3 rounded-[100px] ${
+                className={`h-10 flex justify-start items-center px-4 py-4 rounded-[100px] ${
                   selectedNavItem === "Home"
                     ? "bg-primary text-black"
                     : "bg-navItemGradient text-primary"
@@ -89,7 +89,7 @@ export const NavDashboard = () => {
                   setSelectedNavItem("Platform Solutions");
                   setDropdownVisible(false);
                 }}
-                className={`flex justify-start items-center h-10 px-4 py-3 rounded-[100px] ${
+                className={`flex justify-start items-center h-10 px-4 py-4 rounded-[100px] ${
                   selectedNavItem === "Platform Solutions"
                     ? "bg-primary text-black"
                     : "bg-navItemGradient text-primary"
@@ -102,7 +102,7 @@ export const NavDashboard = () => {
                   setSelectedNavItem("Resources");
                   setDropdownVisible(!isDropdownVisible);
                 }}
-                className={`relative flex gap-x-1 justify-center items-center h-10 px-4 py-3 rounded-[100px] ${
+                className={`relative flex gap-x-1 justify-center items-center h-10 px-4 py-4 rounded-[100px] ${
                   selectedNavItem === "Resources"
                     ? "bg-primary text-black"
                     : "bg-navItemGradient text-primary"
@@ -163,7 +163,7 @@ export const NavDashboard = () => {
                   setSelectedNavItem("Contact");
                   setDropdownVisible(false);
                 }}
-                className={`h-10 px-4 py-3 flex justify-center items-center rounded-[100px] ${
+                className={`h-10 px-4 py-4 flex justify-center items-center rounded-[100px] ${
                   selectedNavItem === "Contact"
                     ? "bg-primary text-black"
                     : "bg-navItemGradient text-primary"
@@ -174,7 +174,7 @@ export const NavDashboard = () => {
             </ul>
           )}
         </div>
-        <div className="flex justify-center max-w-[830px] w-full">
+        <div className="flex justify-center max-w-[830px] w-full h-fit items-center">
           <form>
             <label
               for="default-search"

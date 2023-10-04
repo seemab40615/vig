@@ -325,7 +325,7 @@ export const NavDashboard = () => {
               </defs>
             </svg>
           </button>
-          <button className="h-fit px-2 py-2 flex gap-2 items-center bg-secondary text-primary rounded-[100px] backdrop-blur-[6px] text-black font-medium text-sm -tracking-[0.28px] z-10 flex-shrink">
+          <button className="h-fit px-2 py-2 flex gap-2 items-center bg-secondary text-primary rounded-[100px] backdrop-blur-[6px font-medium text-sm -tracking-[0.28px] z-10 flex-shrink">
             <div className="h-fit px-2 py-2 bg-white rounded-[100px] backdrop-blur-[6px] text-black font-medium text-sm -tracking-[0.28px] z-10 flex-shrink">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
